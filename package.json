@@ -1,6 +1,6 @@
 {
   "name": "loops-boilerplate",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "loops web components",
   "author": "lishuo@mozat.com",
   "private": true,
@@ -10,6 +10,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "normalize.css": "^5.0.0",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0"
   },
@@ -50,6 +51,7 @@
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.3",
     "semver": "^5.3.0",
+    "style-loader": "^0.15.0",
     "url-loader": "^0.5.7",
     "vue-loader": "^11.1.4",
     "vue-style-loader": "^2.0.0",
