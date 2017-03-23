@@ -1,7 +1,7 @@
 <template>
   <ul class="top-navigation">
     <li v-for="(link, index) in links">
-      <a class="link" @click="_onPress(index)" :class="{ active : index === activeIndex }">
+      <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
         <span>{{ link.title }}</span>
       </a>
     </li>
@@ -15,18 +15,14 @@
         type: Array,
         default: [],
       },
-      onPress: {
-        type: Function,
-        default: undefined,
-      },
     },
     data: () => ({
       activeIndex: 0,
     }),
     methods: {
-      _onPress(index) {
+      _onPress(link, index) {
         this.activeIndex = index;
-        if (this.onPress) this.onPress();
+        if (link.onPress) link.onPress();
       },
     },
   };
