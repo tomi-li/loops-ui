@@ -16,6 +16,7 @@ Vue.component('lo-top-navigation', components.TopNavigation);
 Vue.component('lo-section', components.Section);
 Vue.component('lo-widget', components.Widget);
 Vue.component('lo-spinner', components.Spinner);
+Vue.component('lo-page', components.Page);
 
 /* eslint-disable no-new */
 new Vue({

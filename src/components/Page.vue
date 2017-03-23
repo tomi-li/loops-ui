@@ -1,0 +1,48 @@
+<template>
+
+  <div class="page">
+    <div v-if="loading" class="backdrop">
+      <spinner></spinner>
+    </div>
+    <slot></slot>
+  </div>
+
+</template>
+
+<script>
+  import Spinner from './Spinner';
+
+  export default {
+    components: {
+      spinner: Spinner,
+    },
+    props: {
+      loading: {
+        type: Boolean,
+        default: false,
+      },
+    },
+  };
+</script>
+
+<style lang="scss" scoped>
+  @import "../consts.scss";
+
+  .page {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: $bg-color;
+
+    .backdrop {
+      @include flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255, 255, 255, .5);
+    }
+
+  }
+</style>

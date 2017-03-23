@@ -7,6 +7,7 @@ import Section from './Section';
 import TopNavigation from './TopNavigation';
 import Widget from './Widget';
 import Spinner from './Spinner';
+import Page from './Page';
 
 export default {
   Button,
@@ -15,4 +16,5 @@ export default {
   TopNavigation,
   Widget,
   Spinner,
+  Page,
 };

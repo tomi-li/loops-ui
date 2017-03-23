@@ -20,15 +20,9 @@
 <style lang="scss" scoped>
   @import "../consts.scss";
 
-  .sk-spinner-three-bounce.sk-spinner {
-    margin: 0 auto;
-    width: 70px;
-    text-align: center;
-  }
-
   .sk-spinner-three-bounce div {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
     background-color: $primary-color;
     border-radius: 100%;
     display: inline-block;
