@@ -36,6 +36,7 @@
   @import "../consts";
 
   .top-navigation {
+    @include flex;
     flex-flow: row nowrap;
     border: 1px solid $primary-color;
     border-radius: 4px;

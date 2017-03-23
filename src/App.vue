@@ -14,6 +14,9 @@
         <li>
           <router-link to="/containers">Containers</router-link>
         </li>
+        <li>
+          <router-link to="/spinners">Spinners</router-link>
+        </li>
       </ul>
     </div>
     <div class="content">

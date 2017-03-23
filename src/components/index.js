@@ -6,6 +6,7 @@ import Card from './Card';
 import Section from './Section';
 import TopNavigation from './TopNavigation';
 import Widget from './Widget';
+import Spinner from './Spinner';
 
 export default {
   Button,
@@ -13,4 +14,5 @@ export default {
   Section,
   TopNavigation,
   Widget,
+  Spinner,
 };

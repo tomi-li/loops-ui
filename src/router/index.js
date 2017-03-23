@@ -5,6 +5,7 @@ import Typography from '../pages/Typography';
 import Buttons from '../pages/Buttons';
 import Containers from '../pages/Containers';
 import Navigation from '../pages/Navigation';
+import Spinner from '../pages/Spinners';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/navigation',
       name: 'Navigation',
       component: Navigation,
+    },
+    {
+      path: '/spinners',
+      name: 'Spinner',
+      component: Spinner,
     },
   ],
 });
