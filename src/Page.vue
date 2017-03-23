@@ -10,7 +10,7 @@
 </template>
 
 <script>
-  import Spinner from './Spinner';
+  import Spinner from './Spinner.vue';
 
   export default {
     name: 'lo-page',

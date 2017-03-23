@@ -1,23 +1,16 @@
 import Vue from 'vue';
-import App from './App';
+import App from './App.vue';
 import router from './router';
 
 // reset css
 import '../node_modules/normalize.css/normalize.css';
 // components
-import components from '../src';
+import VueLoops from '../src';
 
 console.clear();
 
+Vue.use(VueLoops);
 Vue.config.productionTip = false;
-Vue.component('lo-button', components.Button);
-Vue.component('lo-card', components.Card);
-Vue.component('lo-top-navigation', components.TopNavigation);
-Vue.component('lo-section', components.Section);
-Vue.component('lo-widget', components.Widget);
-Vue.component('lo-spinner', components.Spinner);
-Vue.component('lo-page', components.Page);
-Vue.component('lo-circle', components.Circle);
 
 /* eslint-disable no-new */
 new Vue({
