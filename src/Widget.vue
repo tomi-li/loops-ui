@@ -7,6 +7,7 @@
 
 <script>
   export default {
+    name: 'lo-widget',
     props: {
       text: {
         type: String,
@@ -36,7 +37,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts";
+  @import "consts";
 
   .widget {
     border: 1px solid $divider-color;

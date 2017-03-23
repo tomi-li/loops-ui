@@ -8,6 +8,7 @@
 
 <script>
   export default {
+    name: 'lo-spinner',
     props: {
       show: {
         type: Boolean,
@@ -18,7 +19,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts.scss";
+  @import "consts";
 
   .sk-spinner-three-bounce div {
     width: 14px;

@@ -14,6 +14,7 @@
 
 <script>
   export default {
+    name: 'lo-card',
     props: {
       header: {
         type: String,
@@ -33,7 +34,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts";
+  @import "consts";
 
   .card {
     @include flex;

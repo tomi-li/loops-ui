@@ -30,7 +30,7 @@
 </script>
 
 <style lang="scss">
-  @import "consts";
+  @import "../src/consts";
 
   body {
     @include body;

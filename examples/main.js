@@ -5,7 +5,7 @@ import router from './router';
 // reset css
 import '../node_modules/normalize.css/normalize.css';
 // components
-import components from './components';
+import components from '../src';
 
 console.clear();
 

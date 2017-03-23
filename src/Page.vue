@@ -13,6 +13,7 @@
   import Spinner from './Spinner';
 
   export default {
+    name: 'lo-page',
     components: {
       spinner: Spinner,
     },
@@ -26,7 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts.scss";
+  @import "consts";
 
   .page {
     position: relative;

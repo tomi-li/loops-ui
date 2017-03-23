@@ -10,6 +10,7 @@
 
 <script>
   export default {
+    name: 'lo-top-navigation',
     props: {
       links: {
         type: Array,
@@ -29,7 +30,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts";
+  @import "consts";
 
   .top-navigation {
     @include flex;

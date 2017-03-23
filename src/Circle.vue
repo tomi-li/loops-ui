@@ -19,6 +19,7 @@
   };
 
   export default {
+    name: 'lo-circle',
     props: {
       radius: {
         type: Number,

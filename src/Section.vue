@@ -9,6 +9,7 @@
 
 <script>
   export default {
+    name: 'lo-section',
     props: {
       header: {
         type: String,
@@ -27,7 +28,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../consts.scss";
+  @import "consts";
 
   section {
 

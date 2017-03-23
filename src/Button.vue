@@ -8,6 +8,7 @@
 
 <script>
   export default{
+    name: 'lo-button',
     props: {
       type: {
         type: String,
@@ -32,7 +33,7 @@
 
 
 <style lang="scss" scoped>
-  @import "../consts";
+  @import "consts";
 
   .button {
     @include flex;
