@@ -36,11 +36,11 @@
   @import "../consts";
 
   .card {
+    @include flex;
     margin: 10px;
     border-radius: 5px;
     border: 1px solid $divider-color;
-
-    min-height: 100px;
+    background-color: $white;
 
     @media (-webkit-min-device-pixel-ratio: 2) {
       border: .5px solid $divider-color;
@@ -59,10 +59,12 @@
     color: #b0b0bb;
   }
 
-  .card.active {
-    header {
-      color: $primary-color;
-    }
+  .card.active header {
+    color: $primary-color;
+  }
+
+  .content{
+    @include flex;
   }
 
 </style>

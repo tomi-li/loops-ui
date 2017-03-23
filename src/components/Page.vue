@@ -33,6 +33,7 @@
     min-height: 100%;
     min-width: 100%;
     background-color: $bg-color;
+    overflow: auto; // prevent margin collapse
 
     .backdrop {
       @include flex;

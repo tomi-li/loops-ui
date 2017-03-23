@@ -17,8 +17,9 @@ $text-secondary-color: #b0b0bb;
   flex-direction: column;
 }
 
-@mixin flex($flex: flex,$align-items: center, $justify-content: center) {
+@mixin flex($flex: flex, $direction: column,$align-items: center, $justify-content: center) {
   display: $flex;
+  flex-flow: $direction nowarp;
   align-items: $align-items;
   justify-content: $justify-content;
 }
