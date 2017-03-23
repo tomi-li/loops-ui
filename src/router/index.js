@@ -4,6 +4,7 @@ import Index from '../pages/Index';
 import Typography from '../pages/Typography';
 import Buttons from '../pages/Buttons';
 import Containers from '../pages/Containers';
+import Navigation from '../pages/Navigation';
 
 Vue.use(Router);
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/containers',
       name: 'Containers',
       component: Containers,
+    },
+    {
+      path: '/navigation',
+      name: 'Navigation',
+      component: Navigation,
     },
   ],
 });

@@ -12,6 +12,8 @@ console.clear();
 Vue.config.productionTip = false;
 Vue.component('lo-button', components.Button);
 Vue.component('lo-card', components.Card);
+Vue.component('lo-top-navigation', components.TopNavigation);
+Vue.component('lo-section', components.Section);
 
 /* eslint-disable no-new */
 new Vue({

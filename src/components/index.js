@@ -3,8 +3,12 @@
  */
 import Button from './Button';
 import Card from './Card';
+import Section from './Section';
+import TopNavigation from './TopNavigation';
 
-export default{
+export default {
   Button,
   Card,
+  Section,
+  TopNavigation,
 };
