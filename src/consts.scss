@@ -7,16 +7,14 @@ $bg-color: #f6f6f8;
 $bg-dark-color: #eaf0f8;
 
 $text-color: #777681;
-$text-bold-color: #b0b0bb;
+$text-secondary-color: #b0b0bb;
 
-* {
+@mixin body {
+  font-family: "Helvetica Neue", serif;
+  color: $text-color;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-}
-
-body {
-  font-family: "Helvetica Neue", serif;
 }
 
 @mixin flex($align-items: center, $justify-content: center) {

@@ -11,6 +11,9 @@
         <li>
           <router-link to="/navigation">Navigation</router-link>
         </li>
+        <li>
+          <router-link to="/containers">Containers</router-link>
+        </li>
       </ul>
     </div>
     <div class="content">
@@ -24,6 +27,12 @@
 </script>
 
 <style lang="scss">
+  @import "consts";
+
+  body {
+    @include body;
+  }
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -37,10 +46,10 @@
   }
 
   .navigation {
-
+    width: 300px;
   }
 
   .content {
-
+    flex: 1;
   }
 </style>
