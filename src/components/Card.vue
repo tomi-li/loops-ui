@@ -49,6 +49,7 @@
 
   .card header {
     @include flex;
+    width: 100%; // flex align-items will cause width collapse.
     height: 45px;
     background-color: $bg-color;
     border-radius: 5px 5px 0 0;
@@ -63,7 +64,7 @@
     color: $primary-color;
   }
 
-  .content{
+  .content {
     @include flex;
   }
 
