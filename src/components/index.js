@@ -8,6 +8,7 @@ import TopNavigation from './TopNavigation';
 import Widget from './Widget';
 import Spinner from './Spinner';
 import Page from './Page';
+import Circle from './Circle';
 
 export default {
   Button,
@@ -17,4 +18,5 @@ export default {
   Widget,
   Spinner,
   Page,
+  Circle,
 };

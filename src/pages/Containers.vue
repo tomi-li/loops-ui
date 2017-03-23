@@ -25,7 +25,6 @@
       </lo-section>
     </section>
 
-
     <section>
       <h2> Widget </h2>
       <lo-widget
@@ -49,6 +48,14 @@
           </lo-page>
         </div>
       </div>
+    </section>
+
+
+    <section>
+      <h2> Circle </h2>
+      <lo-circle :current="20" :maximum="67">
+
+      </lo-circle>
     </section>
   </div>
 </template>

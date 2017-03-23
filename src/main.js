@@ -17,6 +17,7 @@ Vue.component('lo-section', components.Section);
 Vue.component('lo-widget', components.Widget);
 Vue.component('lo-spinner', components.Spinner);
 Vue.component('lo-page', components.Page);
+Vue.component('lo-circle', components.Circle);
 
 /* eslint-disable no-new */
 new Vue({
