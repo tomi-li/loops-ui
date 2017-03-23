@@ -14,6 +14,7 @@ Vue.component('lo-button', components.Button);
 Vue.component('lo-card', components.Card);
 Vue.component('lo-top-navigation', components.TopNavigation);
 Vue.component('lo-section', components.Section);
+Vue.component('lo-widget', components.Widget);
 
 /* eslint-disable no-new */
 new Vue({

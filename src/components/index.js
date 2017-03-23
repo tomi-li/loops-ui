@@ -5,10 +5,12 @@ import Button from './Button';
 import Card from './Card';
 import Section from './Section';
 import TopNavigation from './TopNavigation';
+import Widget from './Widget';
 
 export default {
   Button,
   Card,
   Section,
   TopNavigation,
+  Widget,
 };

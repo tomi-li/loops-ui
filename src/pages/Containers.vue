@@ -17,6 +17,16 @@
         <span>what is the </span>
       </lo-section>
     </section>
+
+
+    <section>
+      <h2> Widget </h2>
+      <lo-widget
+        text="Demo Widget"
+        :icon="require('./assets/fresh.svg')"
+        :iconSize="{ width: 52, height: 42}">
+      </lo-widget>
+    </section>
   </div>
 </template>
 
