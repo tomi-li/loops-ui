@@ -1,12 +1,10 @@
 <template>
-
   <div class="page">
     <div v-if="loading" class="backdrop">
       <spinner></spinner>
     </div>
     <slot></slot>
   </div>
-
 </template>
 
 <script>
@@ -43,7 +41,8 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(255, 255, 255, .5);
+      background-color: rgba(255, 255, 255, .8);
+      z-index: 100;
     }
 
   }

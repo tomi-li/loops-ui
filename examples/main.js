@@ -2,15 +2,15 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
-// reset css
 import '../node_modules/normalize.css/normalize.css';
-// components
 import VueLoops from '../src';
+import components from './components';
 
 console.clear();
 
 Vue.use(VueLoops);
 Vue.config.productionTip = false;
+
 
 /* eslint-disable no-new */
 new Vue({

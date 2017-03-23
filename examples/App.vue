@@ -1,26 +1,32 @@
 <template>
   <div id="app">
-    <div class="navigation">
-      <ul>
-        <li>
-          <router-link to="/typography">Typography</router-link>
-        </li>
-        <li>
-          <router-link to="/buttons">Buttons</router-link>
-        </li>
-        <li>
-          <router-link to="/navigation">Navigation</router-link>
-        </li>
-        <li>
-          <router-link to="/containers">Containers</router-link>
-        </li>
-        <li>
-          <router-link to="/spinners">Spinners</router-link>
-        </li>
-      </ul>
-    </div>
-    <div class="content">
-      <router-view></router-view>
+    <header class="page-header">
+      <h3>Loops</h3>
+    </header>
+
+    <div class="body">
+      <div class="navigation">
+        <ul>
+          <li>
+            <router-link to="/typography">Typography</router-link>
+          </li>
+          <li>
+            <router-link to="/buttons">Buttons</router-link>
+          </li>
+          <li>
+            <router-link to="/navigation">Navigation</router-link>
+          </li>
+          <li>
+            <router-link to="/containers">Containers</router-link>
+          </li>
+          <li>
+            <router-link to="/spinners">Spinners</router-link>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -34,9 +40,6 @@
 
   body {
     @include body;
-  }
-
-  #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -44,15 +47,32 @@
     ul {
       list-style: none;
     }
-
-    display: flex;
   }
 
-  .navigation {
-    width: 300px;
+  #app {
+    .page-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: $bg-color;
+      border-bottom: 1px solid $divider-color;
+    }
+
+    .body {
+      @include flex(flex, row, flex-start);
+
+      padding-top: 44px;
+
+      .navigation {
+        width: 300px;
+      }
+
+      .content {
+        flex: 1;
+      }
+    }
   }
 
-  .content {
-    flex: 1;
-  }
 </style>
