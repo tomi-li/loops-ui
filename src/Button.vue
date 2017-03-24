@@ -42,9 +42,26 @@
     width: 240px;
     border-radius: 21px;
 
+    &.disabled {
+      background-color: $disable-color;
+      color: $disable-text-color;
+    }
+
+    &.default {
+      background-color: $primary-color;
+      color: $white;
+    }
+
     &.primary {
       background-color: $primary-color;
       color: $white;
+    }
+
+    &.link {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      color: $primary-color;
     }
   }
 

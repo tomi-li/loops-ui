@@ -9,6 +9,9 @@ $bg-dark-color: #eaf0f8;
 $text-color: #777681;
 $text-secondary-color: #b0b0bb;
 
+$disable-color: #dadada;
+$disable-text-color: #eaebed;
+
 @mixin body {
   font-family: "Helvetica Neue", serif;
   color: $text-color;

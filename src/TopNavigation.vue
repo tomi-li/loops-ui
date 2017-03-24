@@ -1,6 +1,6 @@
 <template>
   <ul class="top-navigation">
-    <li v-for="(link, index) in links">
+    <li v-for="(link, index) in links" :style="{width: liWidth}">
       <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
         <span>{{ link.title }}</span>
       </a>
@@ -20,6 +20,12 @@
     data: () => ({
       activeIndex: 0,
     }),
+    computed: {
+      liWidth() {
+        if (!this.links || this.links.length === 0) return 0;
+        return `${parseFloat(100 / this.links.length).toFixed(2)}px`;
+      },
+    },
     methods: {
       _onPress(link, index) {
         this.activeIndex = index;
