@@ -4,7 +4,6 @@ import router from './router';
 
 import '../node_modules/normalize.css/normalize.css';
 import VueLoops from '../src';
-import components from './components';
 
 console.clear();
 
