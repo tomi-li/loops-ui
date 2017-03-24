@@ -23,7 +23,6 @@
       },
     },
     created() {
-      console.log(this);
     },
     computed: {
       iconWidth() {
