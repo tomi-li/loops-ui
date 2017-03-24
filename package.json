@@ -1,9 +1,8 @@
 {
-  "name": "loops-boilerplate",
-  "version": "0.0.1",
+  "name": "vue-loops",
+  "version": "0.0.3",
   "description": "loops web components",
   "author": "lishuo@mozat.com",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
