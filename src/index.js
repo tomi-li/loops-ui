@@ -1,7 +1,7 @@
 /**
  * All Codes below are Lifetime Warranted by Tomi since 22/03/2017.
  */
-import '../node_modules/normalize.css/normalize.css';
+import 'normalize.css/normalize.css';
 
 import Button from './Button.vue';
 import Card from './Card.vue';
