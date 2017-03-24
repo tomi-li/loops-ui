@@ -62,6 +62,7 @@
       width: auto;
       height: auto;
       color: $primary-color;
+      font-weight: normal;
     }
   }
 
