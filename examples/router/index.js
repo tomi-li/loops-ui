@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Index from '../pages/Index';
-import Typography from '../pages/Typography';
-import Buttons from '../pages/Buttons';
-import Containers from '../pages/Containers';
-import Navigation from '../pages/Navigation';
-import Spinner from '../pages/Spinners';
+import Index from '../pages/Index.vue';
+import Typography from '../pages/Typography.vue';
+import Buttons from '../pages/Buttons.vue';
+import Containers from '../pages/Containers.vue';
+import Navigation from '../pages/Navigation.vue';
+import Spinner from '../pages/Spinners.vue';
 
 Vue.use(Router);
 
