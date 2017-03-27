@@ -1,6 +1,6 @@
 <template>
   <div class="circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
-    <div class="circle-text" v-show="showText"><span>{{ current }} / {{ maximum }}</span></div>
+    <div class="circle-text" v-show="showText"><span>{{ current }}/{{ maximum }}</span></div>
   </div>
 </template>
 
@@ -23,7 +23,7 @@
     props: {
       radius: {
         type: Number,
-        default: 40,
+        default: 32,
       },
       lineWidth: { // line width
         type: Number,
