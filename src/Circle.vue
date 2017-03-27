@@ -100,8 +100,6 @@
       },
     },
   };
-
-
 </script>
 
 
@@ -118,5 +116,4 @@
       justify-content: center;
     }
   }
-
 </style>

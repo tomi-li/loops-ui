@@ -16,9 +16,6 @@
         default: '',
       },
     },
-    created() {
-      console.log(this);
-    },
     computed: {
       showHeader() {
         return this.header !== '';
@@ -30,10 +27,13 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  section {
+  section.section {
+    @include flex;
+    width: 100%;
 
-    header {
+    .header {
       @include flex;
+      width: 100%;
       font-weight: bold;
       background: url('assets/section-header.svg') no-repeat center center;
       background-size: 100%;

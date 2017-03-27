@@ -10,7 +10,6 @@
     name: 'lo-widget',
     props: {
       text: {
-        type: String,
         default: '',
       },
       icon: {
@@ -50,9 +49,14 @@
     }
 
     span {
+      display: inline-block;
+      width: 50%;
       font-size: 14px;
-      padding: 14px;
       font-weight: bold;
+    }
+
+    img {
+      width: 50%;
     }
   }
 </style>
