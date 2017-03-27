@@ -67,6 +67,7 @@
 
   .content {
     @include flex;
+    flex: 1;
   }
 
 </style>
