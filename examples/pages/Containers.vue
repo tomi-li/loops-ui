@@ -23,6 +23,10 @@
       <lo-section header="123123123">
         <span>what is the </span>
       </lo-section>
+
+      <lo-section header="123123123" :icon="sectionTitleClicked">
+        <span>With icon </span>
+      </lo-section>
     </section>
 
     <section>
@@ -61,7 +65,13 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    methods: {
+      sectionTitleClicked() {
+        console.log(this);
+      },
+    },
+  };
 </script>
 
 <style lang="scss">
