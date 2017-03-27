@@ -60,6 +60,10 @@
       <lo-circle :current="20" :maximum="67">
 
       </lo-circle>
+
+      <lo-circle :current="35939" :maximum="40000">
+
+      </lo-circle>
     </section>
   </div>
 </template>

@@ -11,6 +11,7 @@ import Widget from './Widget.vue';
 import Spinner from './Spinner.vue';
 import Page from './Page.vue';
 import Circle from './Circle.vue';
+import filters from './filters';
 
 const componentsArray = [
   Button,
@@ -29,6 +30,7 @@ const install = (Vue) => {
   if (install.installed) return;
 
   componentsArray.map(component => Vue.component(component.name, component));
+  Vue.filter('shortenNumber', filters.shortenNumber);
 };
 
 
