@@ -54,7 +54,7 @@
       min-height: 7.7vw;
 
       .icon {
-        background-color: $bg-color;
+        background-color: #e5e5e5;
         color: $white;
         border-radius: 5px;
         width: 1.2rem;
