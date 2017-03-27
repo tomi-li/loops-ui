@@ -1,7 +1,7 @@
 <template>
-  <section>
-    <header v-show="showHeader">{{ header }}</header>
-    <div class="content">
+  <section class="section">
+    <header class="section-header" v-show="showHeader">{{ header }}</header>
+    <div class="section-content">
       <slot></slot>
     </div>
   </section>
@@ -31,7 +31,7 @@
     @include flex;
     width: 100%;
 
-    .header {
+    .section-header {
       @include flex;
       width: 100%;
       font-weight: bold;

@@ -1,6 +1,6 @@
 <template>
   <div class="circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
-    <div class="text" v-show="showText"><span>{{ current }} / {{ maximum }}</span></div>
+    <div class="circle-text" v-show="showText"><span>{{ current }} / {{ maximum }}</span></div>
   </div>
 </template>
 
@@ -27,7 +27,7 @@
       },
       lineWidth: { // line width
         type: Number,
-        default: 5,
+        default: 6,
       },
       showText: { // display text or not
         type: Boolean,
@@ -107,13 +107,15 @@
   .circle {
     position: relative;
 
-    .text {
+    .circle-text {
       position: absolute;
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 12px;
+      font-weight: bold;
     }
   }
 </style>
