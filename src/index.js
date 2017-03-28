@@ -29,7 +29,10 @@ function install(Vue) {
   /* istanbul ignore if */
   if (install.installed) return;
 
-  componentsArray.map(component => Vue.component(component.name, component));
+// eslint-disable-next-line prefer-arrow-callback,func-names,space-before-function-paren
+  componentsArray.map(function(component) {
+    return Vue.component(component.name, component);
+  });
   Vue.filter('shortenNumber', filters.shortenNumber);
 }
 
