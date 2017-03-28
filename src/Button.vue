@@ -1,7 +1,7 @@
 <template>
   <a class="button"
      @click="_onPress"
-     :class="type">
+     :class="[size, type]">
     <span class="text">{{title}}</span>
   </a>
 </template>
@@ -11,12 +11,18 @@
     name: 'lo-button',
     props: {
       type: {
+        // [ default , primary , secondary,  link , blocked, basic ]
         type: String,
         default: 'default',
       },
       title: {
-        type: String,
+        type: [String, Number],
         default: '',
+      },
+      size: {
+        // [ sm, md, lg ]
+        type: String,
+        default: 'md',
       },
       onPress: {
         type: Function,
@@ -37,11 +43,10 @@
 
   .button {
     @include flex;
+    display: inline-flex;
     cursor: pointer;
-    height: 42px;
-    width: 240px;
-    border-radius: 21px;
 
+    // types
     &.disabled {
       background-color: $disable-color;
       color: $disable-text-color;
@@ -57,12 +62,45 @@
       color: $white;
     }
 
+    &.secondary {
+      background-color: $bg-dark-color;
+      color: $white;
+    }
+
     &.link {
       display: inline-block;
-      width: auto;
-      height: auto;
+      width: auto !important;
+      height: auto !important;;
       color: $primary-color;
       font-weight: normal;
+    }
+
+    &.basic {
+      
+    }
+
+    &.blocked {
+      display: block;
+      width: 100% !important;
+    }
+
+    // sizes
+    &.sm {
+      height: 32px;
+      width: 180px;
+      border-radius: 16px;
+    }
+
+    &.md {
+      height: 42px;
+      width: 240px;
+      border-radius: 21px;
+    }
+
+    &.large {
+      height: 46px;
+      width: 260px;
+      border-radius: 23px;
     }
   }
 

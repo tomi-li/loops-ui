@@ -1,9 +1,17 @@
 # loops-boilerplate
 
-> A boilerplate for loops web pages.  
-> include all kinds of components
+> UI Components for loops web pages.   
+> with d3 charts
 
 
+
+
+
+```
 z-index:
-basics 0
-backdrop 100
+  basics 0
+  backdrop 100
+  
+size: 
+  [sm, md, lg]
+```
