@@ -25,16 +25,13 @@ const componentsArray = [
 ];
 
 
-function install(Vue) {
+const install = (Vue) => {
   /* istanbul ignore if */
   if (install.installed) return;
 
-// eslint-disable-next-line prefer-arrow-callback,func-names,space-before-function-paren
-  componentsArray.map(function(component) {
-    return Vue.component(component.name, component);
-  });
+  componentsArray.map(component => Vue.component(component.name, component));
   Vue.filter('shortenNumber', filters.shortenNumber);
-}
+};
 
 export default install;
 

@@ -5,7 +5,7 @@ const path = require('path');
 config.entry = './src/index.js';
 config.output = {
   path: path.resolve('dist'),
-  filename: 'vue-loops.min.js',
+  filename: 'vue-loops.js',
   library: 'vue-loops',
   libraryTarget: 'umd',
 };

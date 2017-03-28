@@ -8,7 +8,7 @@
     "build": "webpack --progress --config webpack.config.js",
     "lint": "eslint --ext .js,.vue src"
   },
-  "main": "./src",
+  "main": "./dist/vue-loops.js",
   "dependencies": {
     "d3": "^4.7.3",
     "fastclick": "^1.0.6",
