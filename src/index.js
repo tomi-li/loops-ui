@@ -25,14 +25,13 @@ const componentsArray = [
 ];
 
 
-const install = (Vue) => {
+function install(Vue) {
   /* istanbul ignore if */
   if (install.installed) return;
 
   componentsArray.map(component => Vue.component(component.name, component));
   Vue.filter('shortenNumber', filters.shortenNumber);
-};
-
+}
 
 export default install;
 
