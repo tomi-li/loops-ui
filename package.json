@@ -4,7 +4,7 @@
   "description": "loops web components",
   "author": "lishuo.tomi@gmail.com",
   "scripts": {
-    "dev": "node build/dev-server.js",
+    "dev": "webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
     "build": "webpack --progress --config webpack.config.js",
     "lint": "eslint --ext .js,.vue src"
   },
@@ -72,7 +72,9 @@
     "vue-template-compiler": "^2.2.4",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dashboard": "^0.3.0",
     "webpack-dev-middleware": "^1.10.0",
+    "webpack-dev-server": "^2.4.2",
     "webpack-hot-middleware": "^2.16.1",
     "webpack-merge": "^2.6.1"
   },
