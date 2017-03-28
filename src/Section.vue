@@ -54,6 +54,9 @@
       min-height: 7.7vw;
 
       .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #e5e5e5;
         color: $white;
         border-radius: 5px;
@@ -64,5 +67,8 @@
       }
     }
 
+    .section-content {
+      width: 100%;
+    }
   }
 </style>
