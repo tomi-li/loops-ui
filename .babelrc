@@ -1,34 +1,5 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "modules": false
-      }
-    ],
-    "stage-2"
-  ],
-  "plugins": [
-    "transform-runtime",
-    [
-      "typecheck",
-      {
-        "disable": {
-          "production": true
-        }
-      }
-    ]
-  ],
-  "comments": false,
-  "env": {
-    "test": {
-      "presets": [
-        "env",
-        "stage-2"
-      ],
-      "plugins": [
-        "istanbul"
-      ]
-    }
-  }
+    "es2015"
+  ]
 }
