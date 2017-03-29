@@ -1,6 +1,6 @@
 <template>
   <div class="circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
-    <div class="circle-text" v-show="showText"><span>{{ current | shortenNumber }}/{{ maximum | shortenNumber}}</span></div>
+    <div class="circle-text" v-show="showText"><span>{{ showCurrent | shortenNumber }}/{{ maximum | shortenNumber}}</span></div>
   </div>
 </template>
 
@@ -53,8 +53,14 @@
     computed: {
       percentage() {
         if (this.maximum === 0) return 0;
+        if (this.current > this.maximum) return 100;
 
         return this.current / this.maximum;
+      },
+      showCurrent() {
+        return (this.current > this.maximum)
+          ? this.maximum
+          : this.current;
       },
     },
     data: () => ({
