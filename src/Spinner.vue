@@ -24,7 +24,7 @@
   .sk-spinner-three-bounce div {
     width: 14px;
     height: 14px;
-    background-color: $primary-color;
+    background-color: $white;
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-threeBounceDelay 1.4s infinite ease-in-out;
