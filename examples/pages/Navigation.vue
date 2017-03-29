@@ -15,18 +15,26 @@
 
 <script>
   export default {
-    data: () => ({
-      items: [
-        {
-          title: 'page1',
-          onPress: () => console.log('page1'),
-        },
-        {
-          title: 'page2',
-          onPress: () => console.log('page2'),
-        },
-      ],
-    }),
+    data() {
+      return {
+        items: [
+          {
+            title: 'Broadcaster',
+            onPress: () => {
+              this.$router.replace({ path: '/title/broadcaster', query: this.$route.query });
+            },
+            active: false,
+          },
+          {
+            title: 'Looper',
+            onPress: () => {
+              this.$router.replace({ path: '/title/looper', query: this.$route.query });
+            },
+            active: true,
+          },
+        ],
+      };
+    },
   };
 </script>
 

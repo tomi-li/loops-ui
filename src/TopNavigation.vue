@@ -1,7 +1,7 @@
 <template>
   <ul class="top-navigation">
     <li v-for="(link, index) in links" :style="{width: liWidth}">
-      <a class="link" @click="_onPress(link, index)" :class="{ active : link.active }">
+      <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
         <span>{{ link.title }}</span>
       </a>
     </li>
@@ -11,6 +11,17 @@
 <script>
   import attachFastClick from 'fastclick';
 
+  function getActiveIndex(array) {
+    let activeItem;
+    array.forEach((item) => {
+      if (item.active) {
+        activeItem = item;
+      }
+    });
+    if (!activeItem) return -1;
+    return array.indexOf(activeItem);
+  }
+
   export default {
     name: 'lo-top-navigation',
     props: {
@@ -19,9 +30,11 @@
         default: [],
       },
     },
-    data: () => ({
-      activeIndex: 0,
-    }),
+    data() {
+      return {
+        activeIndex: getActiveIndex(this.links),
+      };
+    },
     computed: {
       liWidth() {
         if (!this.links || this.links.length === 0) return 0;
