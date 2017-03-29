@@ -59,6 +59,7 @@
     "rimraf": "^2.6.0",
     "sass-loader": "^6.0.3",
     "style-loader": "^0.15.0",
+    "svg-url-loader": "^2.0.2",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.2",
     "vue-html-loader": "^1.0.0",

@@ -25,11 +25,15 @@ module.exports = {
         loader: 'css-loader',
       },
       {
-        test: /\.(png|jpg|gif|svg|webp)$/,
+        test: /\.(png|jpg|gif|webp)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]',
         },
+      },
+      {
+        test: /\.svg/,
+        loader: 'svg-url-loader',
       },
     ],
   },
