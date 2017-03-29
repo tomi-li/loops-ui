@@ -1,7 +1,7 @@
 <template>
   <ul class="top-navigation">
     <li v-for="(link, index) in links" :style="{width: liWidth}">
-      <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
+      <a class="link" @click="_onPress(link, index)" :class="{ active : link.active }">
         <span>{{ link.title }}</span>
       </a>
     </li>
