@@ -61,7 +61,7 @@
 
       </lo-circle>
 
-      <lo-circle :current="35939" :maximum="40000">
+      <lo-circle :current="8800" :maximum="30000">
 
       </lo-circle>
     </section>
