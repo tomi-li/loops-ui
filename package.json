@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
     "build": "webpack --progress --config webpack.config.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "release": "npm version patch && npm publish"
   },
   "keywords": [
     "Vue",
