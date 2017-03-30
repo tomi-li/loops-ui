@@ -110,6 +110,8 @@
 
 
 <style lang="scss" scoped>
+  @import "consts";
+  
   .circle {
     position: relative;
 
@@ -122,6 +124,7 @@
       justify-content: center;
       font-size: 12px;
       font-weight: bold;
+      color: $text-dark-color;
     }
   }
 </style>

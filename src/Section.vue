@@ -53,6 +53,7 @@
       background-size: 100%;
       min-height: 7.7vw;
       color: $text-color;
+      color: $text-dark-color;
 
       .icon {
         display: flex;

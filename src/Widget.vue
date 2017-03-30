@@ -55,6 +55,7 @@
       width: 50%;
       font-size: 14px;
       font-weight: bold;
+      color: $text-dark-color;
     }
 
     .img-container {
