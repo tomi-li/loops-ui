@@ -41,7 +41,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(255, 255, 255, .8);
+      background-color: rgba(171, 173, 187, .8);
       z-index: 100;
     }
 
