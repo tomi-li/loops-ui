@@ -1,6 +1,8 @@
 <template>
   <div class="widget">
-    <img :style="{width: iconWidth + 'px', height: iconHeight + 'px'}" v-if="icon" :src="icon" alt="">
+    <div class="img-container">
+      <img :style="{width: iconWidth + 'px', height: iconHeight + 'px'}" v-if="icon" :src="icon" alt="">
+    </div>
     <span>{{ text }}</span>
   </div>
 </template>
@@ -55,7 +57,7 @@
       font-weight: bold;
     }
 
-    img {
+    .img-container {
       width: 50%;
     }
   }
