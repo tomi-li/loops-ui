@@ -52,6 +52,7 @@
       background: url('assets/section-header.svg') no-repeat center center;
       background-size: 100%;
       min-height: 7.7vw;
+      color: $text-color;
 
       .icon {
         display: flex;

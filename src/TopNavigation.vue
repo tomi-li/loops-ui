@@ -70,7 +70,8 @@
 
     .link {
       @include flex;
-      padding: 10px 16px;
+      height: 64px;
+      padding: 0 16px;
       cursor: pointer;
       color: $primary-color;
 
