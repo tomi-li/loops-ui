@@ -4,10 +4,11 @@
   "description": "loops web components",
   "author": "lishuo.tomi@gmail.com",
   "scripts": {
-    "dev": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
+    "dev": "webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
     "build": "webpack --progress --config webpack.config.js",
     "lint": "eslint --ext .js,.vue src",
-    "release": "npm version patch && npm publish"
+    "release": "npm version patch && npm publish",
+    "dashboard": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0"
   },
   "keywords": [
     "Vue",

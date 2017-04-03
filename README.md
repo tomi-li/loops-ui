@@ -1,4 +1,4 @@
-# loops-boilerplate
+# loops-ui
 
 > UI Components for loops web pages.   
 > with d3 charts

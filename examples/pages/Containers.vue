@@ -3,6 +3,15 @@
     <h1> Containers </h1>
 
     <section>
+      <h2> Accordion </h2>
+
+      <lo-accordion>
+        <lo-accordion-item>123123</lo-accordion-item>
+      </lo-accordion>
+
+    </section>
+
+    <section>
       <h2> Card </h2>
       <lo-card header="Looper" :active="true" style="width: 300px;">
         <div>
@@ -30,15 +39,6 @@
     </section>
 
     <section>
-      <h2> Widget </h2>
-      <lo-widget
-        text="Demo Widget"
-        :icon="require('./assets/fresh.svg')"
-        :iconSize="{ width: 52, height: 42}">
-      </lo-widget>
-    </section>
-
-    <section>
       <h2> Page </h2>
       <div class="pages">
         <div class="page-demo">
@@ -54,17 +54,6 @@
       </div>
     </section>
 
-
-    <section>
-      <h2> Circle </h2>
-      <lo-circle :current="20" :maximum="67">
-
-      </lo-circle>
-
-      <lo-circle :current="8800" :maximum="30000">
-
-      </lo-circle>
-    </section>
   </div>
 </template>
 

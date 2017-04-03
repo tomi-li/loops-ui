@@ -11,7 +11,9 @@ import Widget from './Widget.vue';
 import Spinner from './Spinner.vue';
 import Page from './Page.vue';
 import Circle from './Circle.vue';
+import Accordion from './Accordion.vue';
 import filters from './filters';
+
 
 const componentsArray = [
   Button,
@@ -22,6 +24,7 @@ const componentsArray = [
   Spinner,
   Page,
   Circle,
+  Accordion,
 ];
 
 
@@ -44,4 +47,5 @@ export const components = {
   Spinner,
   Page,
   Circle,
+  Accordion,
 };

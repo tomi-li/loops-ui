@@ -3,7 +3,15 @@
     <div v-if="loading" class="backdrop">
       <spinner></spinner>
     </div>
-    <slot></slot>
+
+    <!-- Could have Header -->
+    <div v-if="navigator" class="page-header">
+      <h1>{{ navigator }}</h1>
+    </div>
+
+    <div class="page-content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -19,6 +27,10 @@
       loading: {
         type: Boolean,
         default: false,
+      },
+      navigator: {
+        type: String,
+        default: undefined,
       },
     },
   };
@@ -43,6 +55,16 @@
       width: 100%;
       background-color: rgba(0, 0, 0, .5);
       z-index: 100;
+    }
+
+    .page-header {
+      @include flex;
+      height: 64px;
+      border-bottom: 1px solid $divider-color;
+
+      h1 {
+        font-size: 20px;
+      }
     }
 
   }
