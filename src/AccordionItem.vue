@@ -1,7 +1,8 @@
 <template>
   <li>
-    <div class="accordion-item-header">
-      <span @click="toggleCollapse">{{ title }}</span>
+    <div class="accordion-item-header" @click="toggleCollapse">
+      <span>{{ title }}</span>
+      <span class="arrow" :class="{'rotate': display && originalHeight }"></span>
     </div>
     <transition
       v-on:enter="enter"
@@ -69,8 +70,41 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "consts";
+
+  .accordion-item-header {
+    height: 20px;
+    padding: 10px;
+    background-color: $bg-color;
+    border-top: 1px solid $divider-color;
+    cursor: pointer;
+    color: $text-color;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-device-pixel-ratio: 2) {
+      border-top: .5px solid $divider-color;
+    }
+  }
+
   .accordion-item-content {
     overflow: hidden;
     transition: max-height .5s, opacity .4s;
   }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    background: center center no-repeat url('assets/arrow.svg');
+    background-size: contain;
+
+    transition: transform .1s ease-out;
+
+    &.rotate {
+      transform: rotate(90deg);
+    }
+  }
+
+
 </style>
