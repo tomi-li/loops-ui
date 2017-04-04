@@ -12,6 +12,7 @@ import Spinner from './Spinner.vue';
 import Page from './Page.vue';
 import Circle from './Circle.vue';
 import Accordion from './Accordion.vue';
+import AccordionItem from './AccordionItem.vue';
 import filters from './filters';
 
 
@@ -25,6 +26,7 @@ const componentsArray = [
   Page,
   Circle,
   Accordion,
+  AccordionItem,
 ];
 
 
@@ -48,4 +50,5 @@ export const components = {
   Page,
   Circle,
   Accordion,
+  AccordionItem,
 };
