@@ -2,7 +2,6 @@
 
 > UI Components for loops web pages.   
 > with d3 charts.
-> official website: http://loopslive.com
 
 This UI library is written in ES 6 javascript and Flow type checker.
 All charts are using d3 to make data visualized.

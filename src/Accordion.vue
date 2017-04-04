@@ -16,8 +16,7 @@
       },
     },
     methods: {
-      onChildClosed(child) {
-        console.log(child);
+      onChildClosed() {
       },
       onChildOpened(child) {
         if (this.openAtOnce) {
