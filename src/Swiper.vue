@@ -11,6 +11,7 @@
 
 <script>
   import Swiper from 'swiper';
+  import 'swiper/dist/css/swiper.min.css';
 
   export default {
     name: 'lo-swiper',
@@ -35,10 +36,9 @@
 </script>
 
 <style lang="scss">
-  @import '../node_modules/swiper/dist/css/swiper.min.css';
   @import './consts.scss';
 
   .swiper-pagination-bullet-active {
-    background-color: $primary-color;
+    background-color: $primary-color !important;
   }
 </style>
