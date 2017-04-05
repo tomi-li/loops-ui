@@ -6,6 +6,7 @@ import Buttons from '../pages/Buttons.vue';
 import Containers from '../pages/Containers.vue';
 import Navigation from '../pages/Navigation.vue';
 import Spinner from '../pages/Spinners.vue';
+import Swiper from '../pages/Swipers.vue';
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/spinners',
       name: 'Spinner',
       component: Spinner,
+    },
+    {
+      path: '/swipers',
+      name: 'Swiper',
+      component: Swiper,
     },
   ],
 });

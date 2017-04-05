@@ -7,7 +7,7 @@
 
       <div class="pages">
         <div class="page-demo">
-          <lo-accordion :openAtOnce="true">
+          <lo-accordion :oneAtOnce="true">
             <lo-accordion-item title="xxx">TTTest</lo-accordion-item>
             <lo-accordion-item title="yyy">123123</lo-accordion-item>
             <lo-accordion-item title="zzz">123123</lo-accordion-item>

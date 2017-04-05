@@ -10,7 +10,7 @@
   export default {
     name: 'lo-accordion',
     props: {
-      openAtOnce: {
+      oneAtOnce: {
         type: Boolean,
         default: false,
       },
@@ -19,7 +19,7 @@
       onChildClosed() {
       },
       onChildOpened(child) {
-        if (this.openAtOnce) {
+        if (this.oneAtOnce) {
           this.$children.forEach((each) => {
             if (each !== child && each.display) each.toggleCollapse();
           });

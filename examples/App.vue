@@ -22,6 +22,9 @@
           <li>
             <router-link to="/spinners">Spinners</router-link>
           </li>
+          <li>
+            <router-link to="/swipers">Swipers</router-link>
+          </li>
         </ul>
       </div>
       <div class="content">

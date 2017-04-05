@@ -8,7 +8,8 @@
     "build": "webpack --progress --config webpack.config.js",
     "lint": "eslint --ext .js,.vue src",
     "release": "npm version patch && npm publish",
-    "dashboard": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0"
+    "dashboard": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
+    "analyze": "rimraf dist && webpack --json | webpack-bundle-size-analyzer"
   },
   "keywords": [
     "Vue",
@@ -20,6 +21,7 @@
     "d3": "^4.7.3",
     "fastclick": "^1.0.6",
     "normalize.css": "^5.0.0",
+    "swiper": "^3.4.2",
     "vue": "^2.2.2"
   },
   "repository": {
@@ -69,7 +71,7 @@
     "vue-style-loader": "^2.0.0",
     "vue-template-compiler": "^2.2.4",
     "webpack": "^2.2.1",
-    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-bundle-analyzer": "^2.3.1",
     "webpack-dashboard": "^0.3.0",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^2.4.2",

@@ -13,6 +13,8 @@ import Page from './Page.vue';
 import Circle from './Circle.vue';
 import Accordion from './Accordion.vue';
 import AccordionItem from './AccordionItem.vue';
+import Swiper from './Swiper.vue';
+import SwiperSlide from './SwiperSlide.vue';
 import filters from './filters';
 
 
@@ -27,6 +29,8 @@ const componentsArray = [
   Circle,
   Accordion,
   AccordionItem,
+  Swiper,
+  SwiperSlide,
 ];
 
 
@@ -51,4 +55,6 @@ export const components = {
   Circle,
   Accordion,
   AccordionItem,
+  Swiper,
+  SwiperSlide,
 };
