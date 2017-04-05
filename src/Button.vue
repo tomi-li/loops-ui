@@ -2,7 +2,7 @@
   <a class="lo-button"
      @click="_onPress"
      :class="[size, type]">
-    <span class="text">{{title}}</span>
+    <span class="lo-button-text">{{title}}</span>
   </a>
 </template>
 
@@ -104,7 +104,7 @@
     }
   }
 
-  .lo-button .text {
+  .lo-button .lo-button-text {
     font-weight: bold;
     user-select: none;
   }

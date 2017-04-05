@@ -1,7 +1,7 @@
 <template>
   <div class="lo-card" :class="{ active }">
     <!-- Header -->
-    <header class="card-header" v-show="showHeader">
+    <header class="lo-card-header" v-show="showHeader">
       <span>{{header}}</span>
     </header>
 
@@ -48,7 +48,7 @@
     }
   }
 
-  .lo-card .card-header {
+  .lo-card .lo-card-header {
     @include flex;
     width: 100%; // flex align-items will cause width collapse.
     height: 45px;
@@ -61,7 +61,7 @@
     color: #b0b0bb;
   }
 
-  .lo-card.active .card-header {
+  .lo-card.active .lo-card-header {
     color: $primary-color;
   }
 

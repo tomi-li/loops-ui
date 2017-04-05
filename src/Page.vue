@@ -5,11 +5,11 @@
     </div>
 
     <!-- Could have Header -->
-    <div v-if="navigator" class="page-header">
+    <div v-if="navigator" class="lo-page-header">
       <h1>{{ navigator }}</h1>
     </div>
 
-    <div class="page-content">
+    <div class="lo-page-content">
       <slot></slot>
     </div>
   </div>

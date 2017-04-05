@@ -1,10 +1,10 @@
 <template>
   <section class="lo-section">
-    <header class="section-header" v-show="showHeader">
+    <header class="lo-section-header" v-show="showHeader">
       <span>{{ header }}</span>
       <span v-if="icon" class="icon" @click="onPress">?</span>
     </header>
-    <div class="section-content">
+    <div class="lo-section-content">
       <slot></slot>
     </div>
   </section>

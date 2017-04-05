@@ -1,6 +1,6 @@
 <template>
   <div class="lo-circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
-    <div class="circle-text" v-show="showText"><span>{{ showCurrent | shortenNumber }}/{{ maximum | shortenNumber}}</span></div>
+    <div class="lo-circle-text" v-show="showText"><span>{{ showCurrent | shortenNumber }}/{{ maximum | shortenNumber}}</span></div>
   </div>
 </template>
 

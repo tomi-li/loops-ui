@@ -37,7 +37,7 @@
       };
     },
     mounted() {
-      const content = this.$el.querySelector('.accordion-item-content');
+      const content = this.$el.querySelector('.lo-accordion-item-content');
       const defaultContentHeight = `${content.offsetHeight}px`;
       this.originalHeight = defaultContentHeight;
       // little trick here.

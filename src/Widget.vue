@@ -1,6 +1,6 @@
 <template>
   <div class="lo-widget">
-    <div class="img-container">
+    <div class="lo-widget-img-container">
       <img :style="{width: iconWidth + 'px', height: iconHeight + 'px'}" v-if="icon" :src="icon" alt="">
     </div>
     <span>{{ text }}</span>
@@ -58,7 +58,7 @@
       color: $text-dark-color;
     }
 
-    .img-container {
+    .lo-widget-img-container {
       width: 50%;
     }
   }

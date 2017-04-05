@@ -42,7 +42,6 @@
   @import "../src/consts";
 
   body {
-    @include body;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,7 +52,7 @@
   }
 
   #app {
-    .lo-page-header {
+    .page-header {
       position: fixed;
       top: 0;
       left: 0;
@@ -64,8 +63,7 @@
     }
 
     .body {
-      @include flex(flex, row, flex-start);
-
+      @include flex(flex, row, flex-start, flex-start);
       padding-top: 44px;
 
       .navigation {

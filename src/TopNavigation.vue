@@ -1,9 +1,7 @@
 <template>
   <ul class="lo-top-navigation">
-    <li v-for="(link, index) in links" :style="{width: liWidth}">
-      <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
-        <span>{{ link.title }}</span>
-      </a>
+    <li v-for="(link, index) in links" :style="{width: liWidth}" :class="{ active : index === activeIndex }">
+      <a class="lo-top-navigation-link" @click="_onPress(link, index)">{{ link.title }}</a>
     </li>
   </ul>
 </template>
@@ -38,7 +36,7 @@
     computed: {
       liWidth() {
         if (!this.links || this.links.length === 0) return 0;
-        return `${parseFloat(100 / this.links.length).toFixed(2)}px`;
+        return `${parseFloat(100 / this.links.length).toFixed(2)}%`;
       },
     },
     mounted() {
@@ -57,8 +55,7 @@
   @import "consts";
 
   .lo-top-navigation {
-    @include flex;
-    flex-flow: row nowrap;
+    @include flex(flex, row);
     border: 1px solid $primary-color;
     border-radius: 4px;
     margin: 0;
@@ -66,18 +63,29 @@
 
     li {
       flex: 1;
-    }
-
-    .link {
-      @include flex;
-      height: 32px;
-      padding: 0 16px;
-      cursor: pointer;
+      background-color: $white;
       color: $primary-color;
+
+      box-sizing: border-box;
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
 
       &.active {
         background-color: $primary-color;
         color: $white;
+      }
+
+      .lo-top-navigation-link {
+        @include flex;
+        height: 32px;
+        cursor: pointer;
+        padding: 0 16px;
       }
     }
   }
