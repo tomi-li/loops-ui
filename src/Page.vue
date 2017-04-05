@@ -1,6 +1,6 @@
 <template>
   <div class="lo-page">
-    <div v-if="loading" class="backdrop">
+    <div v-if="loading" class="lo-backdrop">
       <spinner></spinner>
     </div>
 
