@@ -10,7 +10,6 @@ config.output = {
   libraryTarget: 'umd',
 };
 config.externals = {
-  swiper: 'Swiper',
   vue: 'Vue',
   d3: 'd3',
 };
