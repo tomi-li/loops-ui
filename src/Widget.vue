@@ -1,5 +1,5 @@
 <template>
-  <div class="widget">
+  <div class="lo-widget">
     <div class="img-container">
       <img :style="{width: iconWidth + 'px', height: iconHeight + 'px'}" v-if="icon" :src="icon" alt="">
     </div>
@@ -39,7 +39,7 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .widget {
+  .lo-widget {
     border: 1px solid $divider-color;
     border-radius: 5px;
     padding: 5px 8px;

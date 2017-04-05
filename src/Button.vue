@@ -1,5 +1,5 @@
 <template>
-  <a class="button"
+  <a class="lo-button"
      @click="_onPress"
      :class="[size, type]">
     <span class="text">{{title}}</span>
@@ -41,7 +41,7 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .button {
+  .lo-button {
     @include flex;
     display: inline-flex;
     cursor: pointer;
@@ -76,7 +76,7 @@
     }
 
     &.basic {
-      
+
     }
 
     &.blocked {
@@ -104,7 +104,7 @@
     }
   }
 
-  .button .text {
+  .lo-button .text {
     font-weight: bold;
     user-select: none;
   }

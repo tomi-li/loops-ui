@@ -1,12 +1,12 @@
 <template>
-  <div class="card" :class="{ active }">
+  <div class="lo-card" :class="{ active }">
     <!-- Header -->
     <header class="card-header" v-show="showHeader">
       <span>{{header}}</span>
     </header>
 
     <!-- Content -->
-    <div class="content">
+    <div class="lo-card-content">
       <slot></slot>
     </div>
   </div>
@@ -36,7 +36,7 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .card {
+  .lo-card {
     @include flex;
     margin: 10px;
     border-radius: 5px;
@@ -48,7 +48,7 @@
     }
   }
 
-  .card .card-header {
+  .lo-card .card-header {
     @include flex;
     width: 100%; // flex align-items will cause width collapse.
     height: 45px;
@@ -61,11 +61,11 @@
     color: #b0b0bb;
   }
 
-  .card.active .card-header {
+  .lo-card.active .card-header {
     color: $primary-color;
   }
 
-  .content {
+  .lo-card-content {
     @include flex;
     flex: 1;
   }

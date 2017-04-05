@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="lo-page">
     <div v-if="loading" class="backdrop">
       <spinner></spinner>
     </div>
@@ -39,14 +39,14 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .page {
+  .lo-page {
     position: relative;
     min-height: 100%;
     min-width: 100%;
     background-color: $bg-color;
     overflow: auto; // prevent margin collapse
 
-    .backdrop {
+    .lo-backdrop {
       @include flex;
       position: absolute;
       top: 0;
@@ -57,7 +57,7 @@
       z-index: 100;
     }
 
-    .page-header {
+    .lo-page-header {
       @include flex;
       height: 64px;
       border-bottom: 1px solid $divider-color;

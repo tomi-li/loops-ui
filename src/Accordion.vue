@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <ul>
-      <slot></slot>
-    </ul>
-  </div>
+  <ul>
+    <slot></slot>
+  </ul>
 </template>
 
 <script>
@@ -28,7 +26,3 @@
     },
   };
 </script>
-
-<style>
-
-</style>

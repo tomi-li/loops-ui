@@ -1,6 +1,6 @@
 <template>
   <li>
-    <div class="accordion-item-header" @click="toggleCollapse">
+    <div class="lo-accordion-item-header" @click="toggleCollapse">
       <span>{{ title }}</span>
       <span class="arrow" :class="{'rotate': display && originalHeight }"></span>
     </div>
@@ -8,7 +8,7 @@
       v-on:enter="enter"
       v-on:leave="leave"
       :css="false">
-      <div class="accordion-item-content" v-show="display">
+      <div class="lo-accordion-item-content" v-show="display">
         <slot></slot>
       </div>
     </transition>
@@ -72,7 +72,7 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .accordion-item-header {
+  .lo-accordion-item-header {
     height: 20px;
     padding: 10px;
     background-color: $bg-color;
@@ -86,25 +86,24 @@
     @media (min-device-pixel-ratio: 2) {
       border-top: .5px solid $divider-color;
     }
-  }
 
-  .accordion-item-content {
-    overflow: hidden;
-    transition: max-height .5s, opacity .4s;
-  }
+    .arrow {
+      width: 20px;
+      height: 20px;
+      background: center center no-repeat url('assets/arrow.svg');
+      background-size: contain;
 
-  .arrow {
-    width: 20px;
-    height: 20px;
-    background: center center no-repeat url('assets/arrow.svg');
-    background-size: contain;
+      transition: transform .1s ease-out;
 
-    transition: transform .1s ease-out;
-
-    &.rotate {
-      transform: rotate(90deg);
+      &.rotate {
+        transform: rotate(90deg);
+      }
     }
   }
 
+  .lo-accordion-item-content {
+    overflow: hidden;
+    transition: max-height .5s, opacity .4s;
+  }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="lo-section">
     <header class="section-header" v-show="showHeader">
       <span>{{ header }}</span>
       <span v-if="icon" class="icon" @click="onPress">?</span>
@@ -39,11 +39,11 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  section.section {
+  section.lo-section {
     @include flex;
     width: 100%;
 
-    .section-header {
+    .lo-section-header {
       @include flex;
       flex-flow: row nowrap;
       align-items: center;
@@ -69,7 +69,7 @@
       }
     }
 
-    .section-content {
+    .lo-section-content {
       width: 100%;
     }
   }

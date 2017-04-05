@@ -1,5 +1,5 @@
 <template>
-  <ul class="top-navigation">
+  <ul class="lo-top-navigation">
     <li v-for="(link, index) in links" :style="{width: liWidth}">
       <a class="link" @click="_onPress(link, index)" :class="{ active : index === activeIndex }">
         <span>{{ link.title }}</span>
@@ -56,7 +56,7 @@
 <style lang="scss" scoped>
   @import "consts";
 
-  .top-navigation {
+  .lo-top-navigation {
     @include flex;
     flex-flow: row nowrap;
     border: 1px solid $primary-color;

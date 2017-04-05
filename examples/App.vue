@@ -53,7 +53,7 @@
   }
 
   #app {
-    .page-header {
+    .lo-page-header {
       position: fixed;
       top: 0;
       left: 0;
@@ -72,7 +72,7 @@
         width: 300px;
       }
 
-      .content {
+      .lo-card-content {
         flex: 1;
         overflow: auto;
       }

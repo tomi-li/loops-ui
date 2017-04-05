@@ -1,5 +1,5 @@
 <template>
-  <div class="circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
+  <div class="lo-circle" :style="{ width: radius * 2 + 'px', height: radius * 2+ 'px' }">
     <div class="circle-text" v-show="showText"><span>{{ showCurrent | shortenNumber }}/{{ maximum | shortenNumber}}</span></div>
   </div>
 </template>
@@ -111,11 +111,11 @@
 
 <style lang="scss" scoped>
   @import "consts";
-  
-  .circle {
+
+  .lo-circle {
     position: relative;
 
-    .circle-text {
+    .lo-circle-text {
       position: absolute;
       width: 100%;
       height: 100%;
