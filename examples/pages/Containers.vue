@@ -5,14 +5,12 @@
     <section>
       <h2> Accordion </h2>
 
-
       <div class="pages">
         <div class="page-demo">
-          <lo-accordion
-            :openAtOnce="true">
-            <lo-accordion-item title="xxx" :opened="false">123123 <br> b123123 <br> 123123</lo-accordion-item>
-            <lo-accordion-item title="yyy" :opened="false">123123</lo-accordion-item>
-            <lo-accordion-item title="zzz" :opened="false">123123</lo-accordion-item>
+          <lo-accordion :openAtOnce="true">
+            <lo-accordion-item title="xxx">TTTest</lo-accordion-item>
+            <lo-accordion-item title="yyy">123123</lo-accordion-item>
+            <lo-accordion-item title="zzz">123123</lo-accordion-item>
           </lo-accordion>
         </div>
       </div>
