@@ -10,9 +10,9 @@ config.output = {
   libraryTarget: 'umd',
 };
 config.externals = {
+  swiper: 'Swiper',
   vue: 'Vue',
   d3: 'd3',
-  swiper: 'swiper',
 };
 
 config.plugins = (config.plugins || []).concat([
