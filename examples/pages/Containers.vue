@@ -30,7 +30,6 @@
           <lo-button title="Submit" type="primary"></lo-button>
         </div>
       </lo-card>
-
     </section>
 
     <section>

@@ -12,7 +12,7 @@
     props: {
       type: {
         // [ default , primary , secondary,  link , blocked, basic ]
-        type: String,
+        type: [String, Array],
         default: 'default',
       },
       title: {
@@ -76,7 +76,22 @@
     }
 
     &.basic {
+      background-color: transparent;
 
+      &.default {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
+
+      &.primary {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+      }
+
+      &.secondary {
+        border: 1px solid $text-dark-color;
+        color: $text-dark-color;
+      }
     }
 
     &.blocked {

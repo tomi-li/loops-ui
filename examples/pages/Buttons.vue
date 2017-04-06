@@ -17,6 +17,12 @@
         <h3>Secondary</h3>
         <lo-button title="Link" type="secondary" :onPress="log"></lo-button>
       </div>
+
+      <div>
+        <h3>Basic</h3>
+        <lo-button title="Link" :type="['primary', 'basic']" :onPress="log"></lo-button>
+        <lo-button title="Link" :type="['secondary', 'basic']" size="sm" :onPress="log"></lo-button>
+      </div>
     </section>
 
   </div>
