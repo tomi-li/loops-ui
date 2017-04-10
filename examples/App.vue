@@ -7,11 +7,11 @@
           <blockquote>
             <span>A UI component for Loops APP</span>
             <br>
-            <small>lishuo.tomi@gmail.com</small>
+            <small>lishuo@mozat.com</small>
           </blockquote>
         </li>
         <li>
-          <router-link to="/typography">Overview</router-link>
+          <router-link to="/overview">Overview</router-link>
         </li>
         <li>
           <router-link to="/typography">Typography</router-link>

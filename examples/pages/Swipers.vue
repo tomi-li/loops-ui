@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>Swipers</h1>
+
     <lo-swiper class="my-swiper" :options="{pagination: '.swiper-pagination'}">
       <lo-swiper-slide class="my-slide">Slide 1</lo-swiper-slide>
       <lo-swiper-slide class="my-slide">Slide 2</lo-swiper-slide>
