@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Overview from '../pages/Overview.vue';
-import Typography from '../pages/Typography.vue';
 import Buttons from '../pages/Buttons.vue';
 import Containers from '../pages/Containers.vue';
 import Navigation from '../pages/Navigation.vue';
@@ -20,11 +19,6 @@ export default new Router({
       path: '/overview',
       name: 'Overview',
       component: Overview,
-    },
-    {
-      path: '/typography',
-      name: 'Typography',
-      component: Typography,
     },
     {
       path: '/buttons',

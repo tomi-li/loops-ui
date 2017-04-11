@@ -8,6 +8,7 @@
       <div>
         <h3>Primary</h3>
         <lo-button title="Submit" type="primary" :onPress="log"></lo-button>
+        <lo-button title="Submit" type="primary" size="sm" :onPress="log"></lo-button>
       </div>
       <div>
         <h3>Link</h3>

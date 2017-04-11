@@ -1,5 +1,5 @@
 <template>
-  <div class="sk-spinner sk-spinner-three-bounce" v-show="show">
+  <div class="sk-spinner sk-spinner-three-bounce" v-show="show" :class="{inverse}">
     <div class="sk-bounce1"></div>
     <div class="sk-bounce2"></div>
     <div class="sk-bounce3"></div>
@@ -14,6 +14,10 @@
         type: Boolean,
         default: true,
       },
+      inverse: {
+        type: Boolean,
+        default: false,
+      },
     },
   };
 </script>
@@ -21,10 +25,20 @@
 <style lang="scss" scoped>
   @import "consts";
 
+  .sk-spinner {
+    div {
+      background-color: $primary-color;
+    }
+
+    &.inverse div {
+      background-color: $white;
+    }
+  }
+
   .sk-spinner-three-bounce div {
     width: 14px;
     height: 14px;
-    background-color: $white;
+
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-threeBounceDelay 1.4s infinite ease-in-out;

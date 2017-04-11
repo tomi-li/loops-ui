@@ -16,7 +16,7 @@
         activeItem = item;
       }
     });
-    if (!activeItem) return -1;
+    if (!activeItem) return 0;
     return array.indexOf(activeItem);
   }
 
@@ -56,6 +56,7 @@
 
   .lo-top-navigation {
     @include flex(flex, row);
+    background-color: $white;
     border: 1px solid $primary-color;
     border-radius: 4px;
     margin: 0;
@@ -63,18 +64,8 @@
 
     li {
       flex: 1;
-      background-color: $white;
       color: $primary-color;
-
       box-sizing: border-box;
-
-      &:first-child {
-        border-radius: 4px 0 0 4px;
-      }
-
-      &:last-child {
-        border-radius: 0 4px 4px 0;
-      }
 
       &.active {
         background-color: $primary-color;

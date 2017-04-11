@@ -34,3 +34,11 @@ $disable-text-color: #eaebed;
   align-items: $align-items;
   justify-content: $justify-content;
 }
+
+@mixin boxShadow() {
+  box-shadow: 0 4px 10px 0 #aaaaaa;
+}
+
+@mixin darkBg() {
+  background-color: $bg-dark-color;
+}

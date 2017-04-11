@@ -2,19 +2,18 @@
   <div id="app">
     <div class="navigation">
       <ul>
-        <li>
+        <li class="top-logo">
           <div class="logo"></div>
           <blockquote>
             <span>A UI component for Loops APP</span>
             <br>
-            <small>lishuo@mozat.com</small>
+            <small>
+              <lo-button type="link" href="mailto:lishuo@mozat.com" title="lishuo@mozat.com"></lo-button>
+            </small>
           </blockquote>
         </li>
         <li>
           <router-link to="/overview">Overview</router-link>
-        </li>
-        <li>
-          <router-link to="/typography">Typography</router-link>
         </li>
         <li>
           <router-link to="/buttons">Buttons</router-link>
@@ -74,20 +73,29 @@
       width: 300px;
       height: 100%;
       background-color: $bg-color;
-      padding: 20px 20px;
       box-sizing: border-box;
 
-      a {
-        display: inline-block;
+      .top-logo {
+        padding: 20px;
+      }
+
+      li > a {
+        display: block;
         text-decoration: none;
         color: $text-dark-color;
         font-weight: 600;
-
+        padding: 0 20px;
         height: 40px;
         line-height: 40px;
 
+        transition: box-shadow .5s, color .5s ease-out;
+
         &.router-link-active {
           color: $primary-color;
+        }
+
+        &:hover {
+          @include boxShadow;
         }
       }
 
@@ -105,8 +113,17 @@
       padding: 20px;
       flex: 1;
       overflow: auto;
+
+      & > div {
+        & > h1 {
+          padding-bottom: 10px;
+        }
+
+        & > h2 {
+          padding-bottom: 10px;
+          border-bottom: .5px solid $divider-color;
+        }
+      }
     }
-
   }
-
 </style>

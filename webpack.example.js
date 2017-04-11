@@ -9,6 +9,8 @@ config.output = {
   filename: '[name]_[hash].js',
 };
 
+config.devtool = 'eval';
+
 config.plugins = [
   new HtmlWebpackPlugin({
     filename: './index.html',

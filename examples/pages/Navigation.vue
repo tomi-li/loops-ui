@@ -20,17 +20,11 @@
         items: [
           {
             title: 'Broadcaster',
-            onPress: () => {
-              this.$router.replace({ path: '/title/broadcaster', query: this.$route.query });
-            },
-            active: false,
+            onPress: () => console.log('pressed'),
           },
           {
             title: 'Looper',
-            onPress: () => {
-              this.$router.replace({ path: '/title/looper', query: this.$route.query });
-            },
-            active: true,
+            onPress: () => console.log('pressed'),
           },
         ],
       };

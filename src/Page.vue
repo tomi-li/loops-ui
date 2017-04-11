@@ -1,7 +1,7 @@
 <template>
   <div class="lo-page">
     <div v-if="loading" class="lo-backdrop">
-      <spinner></spinner>
+      <spinner :inverse="true"></spinner>
     </div>
 
     <!-- Could have Header -->

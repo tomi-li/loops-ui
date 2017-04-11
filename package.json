@@ -17,6 +17,7 @@
     "d3"
   ],
   "main": "./dist/vue-loops.js",
+  "module": "./src/index.js",
   "dependencies": {
     "d3": "^4.7.3",
     "fastclick": "^1.0.6",
