@@ -52,14 +52,14 @@
       background: url('assets/section-header.svg') no-repeat center center;
       background-size: 100%;
       min-height: 7.7vw;
-      color: $text-dark-color;
+      color: $t2;
 
       .icon {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #e5e5e5;
-        color: $white;
+        color: $ic2;
         border-radius: 5px;
         width: 1.2rem;
         height: 1.2rem;

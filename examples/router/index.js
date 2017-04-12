@@ -6,6 +6,7 @@ import Containers from '../pages/Containers.vue';
 import Navigation from '../pages/Navigation.vue';
 import Spinner from '../pages/Spinners.vue';
 import Swiper from '../pages/Swipers.vue';
+import Colors from '../pages/Color.vue';
 
 Vue.use(Router);
 
@@ -19,6 +20,11 @@ export default new Router({
       path: '/overview',
       name: 'Overview',
       component: Overview,
+    },
+    {
+      path: '/colors',
+      name: 'Colors',
+      component: Colors,
     },
     {
       path: '/buttons',

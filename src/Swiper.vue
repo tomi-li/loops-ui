@@ -42,10 +42,10 @@
     custom to theme color
    */
   .swiper-pagination-bullet-active {
-    background-color: $primary-color !important;
+    background-color: $m1 !important;
   }
 
   .swiper-pagination-progress .swiper-pagination-progressbar {
-    background-color: $primary-color !important;
+    background-color: $m1 !important;
   }
 </style>

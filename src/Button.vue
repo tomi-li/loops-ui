@@ -53,25 +53,25 @@
     }
 
     &.default {
-      background-color: $primary-color;
-      color: $white;
+      background-color: $m1;
+      color: $ic2;
     }
 
     &.primary {
-      background-color: $primary-color;
-      color: $white;
+      background-color: $m1;
+      color: $ic2;
     }
 
     &.secondary {
-      background-color: $bg-dark-color;
-      color: $white;
+      background-color: $bg2;
+      color: $ic2;
     }
 
     &.link {
       display: inline-block;
       width: auto !important;
       height: auto !important;;
-      color: $primary-color;
+      color: $m1;
       font-weight: normal;
     }
 
@@ -79,18 +79,18 @@
       background-color: transparent;
 
       &.default {
-        border: 1px solid $primary-color;
-        color: $primary-color;
+        border: 1px solid $m1;
+        color: $m1;
       }
 
       &.primary {
-        border: 1px solid $primary-color;
-        color: $primary-color;
+        border: 1px solid $m1;
+        color: $m1;
       }
 
       &.secondary {
-        border: 1px solid $text-dark-color;
-        color: $text-dark-color;
+        border: 1px solid $t2;
+        color: $t2;
       }
     }
 

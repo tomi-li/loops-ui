@@ -37,7 +37,7 @@
     position: relative;
     margin: 10px 0;
     padding: 10px 14px 8px;
-    border: .5px solid $divider-color;
+    border: .5px solid $dl1;
     border-radius: 3px;
 
     .lang {
@@ -46,7 +46,7 @@
       top: 0;
       font-size: 12px;
       padding: 3px 8px;
-      background-color: $bg-dark-color;
+      background-color: $bg2;
       border-radius: 0 0 3px 3px;
     }
 

@@ -27,11 +27,11 @@
 
   .sk-spinner {
     div {
-      background-color: $primary-color;
+      background-color: $m1;
     }
 
     &.inverse div {
-      background-color: $white;
+      background-color: $ic2;
     }
   }
 

@@ -40,14 +40,14 @@
   @import "consts";
 
   .lo-widget {
-    border: 1px solid $divider-color;
+    border: 1px solid $dl1;
     border-radius: 5px;
     padding: 5px 8px;
     @include flex(inline-flex);
     flex-direction: row;
 
     @media (-webkit-min-device-pixel-ratio: 2) {
-      border: .5px solid $divider-color;
+      border: .5px solid $dl1;
     }
 
     span {
@@ -55,7 +55,7 @@
       width: 50%;
       font-size: 14px;
       font-weight: bold;
-      color: $text-dark-color;
+      color: $t2;
     }
 
     .lo-widget-img-container {

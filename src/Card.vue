@@ -40,11 +40,11 @@
     @include flex;
     margin: 10px;
     border-radius: 5px;
-    border: 1px solid $divider-color;
-    background-color: $white;
+    border: 1px solid $dl1;
+    background-color: $ic2;
 
     @media (-webkit-min-device-pixel-ratio: 2) {
-      border: .5px solid $divider-color;
+      border: .5px solid $dl1;
     }
   }
 
@@ -52,7 +52,7 @@
     @include flex;
     width: 100%; // flex align-items will cause width collapse.
     height: 45px;
-    background-color: $bg-color;
+    background-color: $bg1;
     border-radius: 5px 5px 0 0;
     font-size: 17px;
     font-weight: bold;
@@ -62,7 +62,7 @@
   }
 
   .lo-card.active .lo-card-header {
-    color: $primary-color;
+    color: $m1;
   }
 
   .lo-card-content {

@@ -124,7 +124,7 @@
       justify-content: center;
       font-size: 12px;
       font-weight: bold;
-      color: $text-dark-color;
+      color: $t2;
     }
   }
 </style>

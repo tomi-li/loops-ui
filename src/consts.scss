@@ -1,21 +1,41 @@
-$primary-color: #ec2c7a;
-$divider-color: #e2e2e2;
+// Main Color
+$m1: #ec2c7a;
 
-$white: #ffffff;
+// Font Color
+$t1: #2c2c30;
+$t2: #777681;
+$t3: #b0b0bb;
+$t4: #d4d4d4;
+$t5: #ffffff;
 
-$bg-color: #f6f6f8;
-$bg-dark-color: #eaf0f8;
+// Background Color
+$bg1: #f6f6f8;
+$bg2: #f1fbff;
 
-$text-color: #777681;
-$text-secondary-color: #b0b0bb;
-$text-dark-color: #71717b;
+// Dividing Line Color
+$dl1: #e2e2e2;
 
+// Icon Color
+$ic1: #abadbb;
+$ic2: #ffffff;
+
+// Mark Color
+$bm1: rgba(0, 0, 0, .5);
+
+// Tapping Color
+$cl1: #eeeeee;
+$cl2: #c20059;
+
+// Other frequently used color
 $disable-color: #dadada;
 $disable-text-color: #eaebed;
 
+$white: #ffffff;
+$blue: #1488fe;
+
 @mixin body {
   font-family: "Helvetica Neue", serif;
-  color: $text-color;
+  color: $t2;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -23,7 +43,7 @@ $disable-text-color: #eaebed;
   blockquote {
     margin: 4px 0;
     padding: 6px 10px;
-    border-left: 5px solid $primary-color;
+    border-left: 5px solid $m1;
     font-size: 16px;
   }
 }
@@ -40,5 +60,5 @@ $disable-text-color: #eaebed;
 }
 
 @mixin darkBg() {
-  background-color: $bg-dark-color;
+  background-color: $bg2;
 }

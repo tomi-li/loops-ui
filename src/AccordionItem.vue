@@ -75,16 +75,16 @@
   .lo-accordion-item-header {
     height: 20px;
     padding: 10px;
-    background-color: $bg-color;
-    border-top: 1px solid $divider-color;
+    background-color: $bg1;
+    border-top: 1px solid $dl1;
     cursor: pointer;
-    color: $text-color;
+    color: $t2;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
 
     @media (min-device-pixel-ratio: 2) {
-      border-top: .5px solid $divider-color;
+      border-top: .5px solid $dl1;
     }
 
     .arrow {

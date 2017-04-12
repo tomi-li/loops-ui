@@ -56,20 +56,20 @@
 
   .lo-top-navigation {
     @include flex(flex, row);
-    background-color: $white;
-    border: 1px solid $primary-color;
+    background-color: $ic2;
+    border: 1px solid $m1;
     border-radius: 4px;
     margin: 0;
     padding: 0;
 
     li {
       flex: 1;
-      color: $primary-color;
+      color: $m1;
       box-sizing: border-box;
 
       &.active {
-        background-color: $primary-color;
-        color: $white;
+        background-color: $m1;
+        color: $ic2;
       }
 
       .lo-top-navigation-link {
