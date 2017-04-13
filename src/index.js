@@ -15,8 +15,12 @@ import Accordion from './Accordion.vue';
 import AccordionItem from './AccordionItem.vue';
 import Swiper from './Swiper.vue';
 import SwiperSlide from './SwiperSlide.vue';
+import Avatar from './Avatar.vue';
 import filters from './filters';
-
+import List from './List.vue';
+import ListItemDenseLine from './ListItemDenseLine.vue';
+import ListItemSingleLine from './ListItemSingleLine.vue';
+import ListItemTwoLine from './ListItemTwoLine.vue';
 
 const componentsArray = [
   Button,
@@ -31,6 +35,11 @@ const componentsArray = [
   AccordionItem,
   Swiper,
   SwiperSlide,
+  Avatar,
+  List,
+  ListItemDenseLine,
+  ListItemSingleLine,
+  ListItemTwoLine,
 ];
 
 
@@ -57,4 +66,9 @@ export const components = {
   AccordionItem,
   Swiper,
   SwiperSlide,
+  Avatar,
+  List,
+  ListItemDenseLine,
+  ListItemSingleLine,
+  ListItemTwoLine,
 };

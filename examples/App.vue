@@ -22,6 +22,12 @@
           <router-link to="/buttons">Buttons</router-link>
         </li>
         <li>
+          <router-link to="/avatar">Avatar</router-link>
+        </li>
+        <li>
+          <router-link to="/list-single-line">List - SingleLine</router-link>
+        </li>
+        <li>
           <router-link to="/navigation">Navigation</router-link>
         </li>
         <li>
@@ -31,7 +37,7 @@
           <router-link to="/spinners">Spinners</router-link>
         </li>
         <li>
-          <router-link to="/swipers">Swipers</router-link>
+          <router-link to="/swiper">Swipers</router-link>
         </li>
       </ul>
     </div>

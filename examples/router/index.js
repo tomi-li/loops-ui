@@ -7,6 +7,8 @@ import Navigation from '../pages/Navigation.vue';
 import Spinner from '../pages/Spinners.vue';
 import Swiper from '../pages/Swipers.vue';
 import Colors from '../pages/Color.vue';
+import Avatars from '../pages/Avatar.vue';
+import ListSingleLine from '../pages/ListSingleLine.vue';
 
 Vue.use(Router);
 
@@ -47,9 +49,19 @@ export default new Router({
       component: Spinner,
     },
     {
-      path: '/swipers',
+      path: '/swiper',
       name: 'Swiper',
       component: Swiper,
+    },
+    {
+      path: '/list-single-line',
+      name: 'ListSingleLine',
+      component: ListSingleLine,
+    },
+    {
+      path: '/avatar',
+      name: 'Avatar',
+      component: Avatars,
     },
   ],
 });

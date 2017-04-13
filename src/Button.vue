@@ -7,22 +7,24 @@
 </template>
 
 <script>
+  import attachFastClick from 'fastclick';
+
   export default{
     name: 'lo-button',
     props: {
       type: {
-        // [ default , primary , secondary,  link , blocked, basic ]
+        // [primary,  link , blocked, basic ]
         type: [String, Array],
-        default: 'default',
+        default: 'primary',
       },
       title: {
         type: [String, Number],
         default: '',
       },
       size: {
-        // [ sm, md, lg ]
+        // [regular, small, tiny]
         type: String,
-        default: 'md',
+        default: 'regular',
       },
       onPress: {
         type: Function,
@@ -33,6 +35,9 @@
       _onPress() {
         if (this.onPress) this.onPress();
       },
+    },
+    mounted() {
+      attachFastClick.attach(this.$el);
     },
   };
 </script>
@@ -45,26 +50,32 @@
     @include flex;
     display: inline-flex;
     cursor: pointer;
+    border: .5px solid transparent;
+
+    @include disableUserEvents;
 
     // types
-    &.disabled {
-      background-color: $disable-color;
-      color: $disable-text-color;
-    }
-
-    &.default {
-      background-color: $m1;
-      color: $ic2;
-    }
-
     &.primary {
       background-color: $m1;
-      color: $ic2;
+      color: $white;
+    }
+
+    &:active, &.active {
+      background-color: $cl2;
     }
 
     &.secondary {
-      background-color: $bg2;
-      color: $ic2;
+      background-color: $blue;
+      color: $white;
+    }
+
+    &.disabled {
+      background-color: $disable-color;
+      color: $white;
+
+      &:active, &.active {
+        background-color: $disable-color;
+      }
     }
 
     &.link {
@@ -72,25 +83,34 @@
       width: auto !important;
       height: auto !important;;
       color: $m1;
-      font-weight: normal;
     }
 
     &.basic {
       background-color: transparent;
 
-      &.default {
-        border: 1px solid $m1;
-        color: $m1;
-      }
-
       &.primary {
-        border: 1px solid $m1;
+        border: .5px solid $m1;
         color: $m1;
       }
 
       &.secondary {
-        border: 1px solid $t2;
-        color: $t2;
+        border: .5px solid $blue;
+        color: $blue;
+      }
+
+      &.disabled {
+        border: .5px solid $disable-color;
+        color: $disable-color;
+
+        &:active, &.active {
+          border: .5px solid $disable-color;
+          color: $disable-color;
+          background-color: transparent;
+        }
+      }
+
+      &:active, &.active {
+        background-color: rgba($cl2, .2);
       }
     }
 
@@ -100,27 +120,31 @@
     }
 
     // sizes
-    &.sm {
-      height: 32px;
-      width: 180px;
-      border-radius: 16px;
-    }
-
-    &.md {
+    &.regular {
       height: 42px;
       width: 240px;
       border-radius: 21px;
+      font-size: $btn_3;
     }
 
-    &.large {
-      height: 46px;
-      width: 260px;
-      border-radius: 23px;
+    &.small {
+      height: 32px;
+      width: 180px;
+      border-radius: 16px;
+      font-size: $btn_4;
     }
+
+    &.tiny {
+      width: 92px;
+      height: 28px;
+      border-radius: 14px;
+      font-size: $btn_4;
+    }
+
   }
 
-  .lo-button .lo-button-text {
+  .lo-button-text {
     font-weight: bold;
-    user-select: none;
+
   }
 </style>
