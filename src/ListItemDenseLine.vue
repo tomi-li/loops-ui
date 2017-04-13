@@ -2,7 +2,7 @@
   <li class="lo-list-item-dense-line">
     <div class="left">
       <lo-avatar class="item-avatar" v-if="avatar" :src="avatar" :size="3"></lo-avatar>
-      <p v-if="text">{{ text }}</p>
+      <p class="item-text" v-if="text">{{ text }}</p>
       <div>
         <span v-if="subheading1" class="item-subheading1"> {{ subheading1 }}</span>
         <span v-if="subheading2" class="item-subheading2"> {{ subheading2 }}</span>
@@ -46,8 +46,14 @@
     .left {
       display: flex;
       align-items: center;
+
       .item-avatar {
         margin-right: 15px;
+        flex-shrink: 0;
+      }
+
+      .item-text {
+        margin: 0;
       }
 
       .item-subheading1 {

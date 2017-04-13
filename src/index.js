@@ -21,6 +21,7 @@ import List from './List.vue';
 import ListItemDenseLine from './ListItemDenseLine.vue';
 import ListItemSingleLine from './ListItemSingleLine.vue';
 import ListItemTwoLine from './ListItemTwoLine.vue';
+import ListFormInput from './ListFormInput.vue';
 
 const componentsArray = [
   Button,
@@ -40,6 +41,7 @@ const componentsArray = [
   ListItemDenseLine,
   ListItemSingleLine,
   ListItemTwoLine,
+  ListFormInput,
 ];
 
 
@@ -71,4 +73,5 @@ export const components = {
   ListItemDenseLine,
   ListItemSingleLine,
   ListItemTwoLine,
+  ListFormInput,
 };

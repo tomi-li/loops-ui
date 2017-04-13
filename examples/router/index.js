@@ -11,6 +11,7 @@ import Avatars from '../pages/Avatar.vue';
 import ListSingleLine from '../pages/ListSingleLine.vue';
 import ListTwoLine from '../pages/ListTwoLine.vue';
 import ListDenseLine from '../pages/ListDenseLine.vue';
+import Form from '../pages/Form.vue';
 
 Vue.use(Router);
 
@@ -74,6 +75,11 @@ export default new Router({
       path: '/list-dense-line',
       name: 'ListDenseLine',
       component: ListDenseLine,
+    },
+    {
+      path: '/form',
+      name: 'Form',
+      component: Form,
     },
   ],
 });

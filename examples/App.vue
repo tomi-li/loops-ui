@@ -34,6 +34,9 @@
           <router-link to="/list-dense-line">List - DenseLine</router-link>
         </li>
         <li>
+          <router-link to="/form">Form</router-link>
+        </li>
+        <li>
           <router-link to="/navigation">Navigation</router-link>
         </li>
         <li>
