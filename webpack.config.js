@@ -21,6 +21,7 @@ config.plugins = (config.plugins || []).concat([
     compress: {
       warnings: false,
     },
+    comments: false,
   }),
 ]);
 module.exports = config;
