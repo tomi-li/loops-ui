@@ -137,5 +137,19 @@ $btn_4: 13px;
   -webkit-user-select: none;
   -webkit-user-drag: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@mixin list-item() {
+  @include disableUserEvents;
+  border-top: .5px solid $dl1;
+  padding: 0 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
   transition: backgroundColor .2s;
+
+  &:active {
+    background-color: $cl1;
+  }
 }

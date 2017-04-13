@@ -56,8 +56,12 @@ body {
     .logo {
       width: 40%;
       height: 60px;
-      background: center center no-repeat url('./assets/logo-text.svg');
-      background-size: contain;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 

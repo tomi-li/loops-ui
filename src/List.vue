@@ -18,8 +18,6 @@
 
 <style lang="scss">
   .lo-list {
-    line-height: 1em;
-
     // size
     &.size-1, &.size-2, &.size-3 {
       li {
@@ -27,17 +25,39 @@
       }
     }
 
-    &.size-4 {
+    &.size-4, &.size-6, &.size-7 {
       li {
         height: 56px;
       }
     }
 
-    &.size-5 {
+    &.size-5, &.size-11 {
       li {
         height: 74px;
       }
     }
-  }
 
+    &.size-8, &.size-9, &.size-10 {
+      li {
+        height: 64px;
+      }
+    }
+
+    &.size-12 {
+      li {
+        height: 80px;
+      }
+    }
+
+    &.size-13, &.size-15 {
+      li {
+        height: 74px;
+      }
+    }
+    &.size-14 {
+      li {
+        height: 90px;
+      }
+    }
+  }
 </style>

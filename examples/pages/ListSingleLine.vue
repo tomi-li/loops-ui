@@ -34,10 +34,26 @@
       <section>
         <h2>list_3</h2>
         <lo-list class="list" :size="3">
-          <lo-list-item-single-line title="Single-line list specs"></lo-list-item-single-line>
-          <lo-list-item-single-line title="Single-line list specs"></lo-list-item-single-line>
-          <lo-list-item-single-line title="Single-line list specs"></lo-list-item-single-line>
-          <lo-list-item-single-line title="Single-line list specs"></lo-list-item-single-line>
+          <lo-list-item-single-line
+            title="Single-line list specs"
+            :icon="require('../assets/icon.jpg')"
+            :iconClick="iconClick"></lo-list-item-single-line>
+          <lo-list-item-single-line
+            title="Single-line list specs"
+            :icon="require('../assets/icon.jpg')"
+            :iconClick="iconClick"></lo-list-item-single-line>
+          <lo-list-item-single-line
+            title="Single-line list specs"
+            :icon="require('../assets/icon.jpg')"
+            :iconClick="iconClick"></lo-list-item-single-line>
+          <lo-list-item-single-line
+            title="Single-line list specs"
+            :icon="require('../assets/icon.jpg')"
+            :iconClick="iconClick"></lo-list-item-single-line>
+          <lo-list-item-single-line
+            title="Single-line list specs"
+            :icon="require('../assets/icon.jpg')"
+            :iconClick="iconClick"></lo-list-item-single-line>
         </lo-list>
       </section>
 
@@ -87,7 +103,13 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    methods: {
+      iconClick() {
+        console.log('iconClick');
+      },
+    },
+  };
 </script>
 
 <style lang="scss">

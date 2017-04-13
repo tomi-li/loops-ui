@@ -9,6 +9,8 @@ import Swiper from '../pages/Swipers.vue';
 import Colors from '../pages/Color.vue';
 import Avatars from '../pages/Avatar.vue';
 import ListSingleLine from '../pages/ListSingleLine.vue';
+import ListTwoLine from '../pages/ListTwoLine.vue';
+import ListDenseLine from '../pages/ListDenseLine.vue';
 
 Vue.use(Router);
 
@@ -62,6 +64,16 @@ export default new Router({
       path: '/avatar',
       name: 'Avatar',
       component: Avatars,
+    },
+    {
+      path: '/list-two-line',
+      name: 'ListTwoLine',
+      component: ListTwoLine,
+    },
+    {
+      path: '/list-dense-line',
+      name: 'ListDenseLine',
+      component: ListDenseLine,
     },
   ],
 });

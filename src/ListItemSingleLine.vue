@@ -4,9 +4,11 @@
       <lo-avatar class="item-avatar" v-if="avatar" :src="avatar" :size="3"></lo-avatar>
       <span class="item-title">{{ title }}</span>
     </div>
-    <span v-if="subTitle" class="item-sub-title">{{ subTitle }}</span>
-    <div v-if="icon" class="item-icon"><img :src="icon"/></div>
-    <lo-button v-if="button" :type="['basic', 'primary']" size='tiny' :title="button"></lo-button>
+    <div class="right">
+      <span v-if="subTitle" class="item-sub-title">{{ subTitle }}</span>
+      <a v-if="icon" class="item-icon" @click="onIconClick"><img :src="icon"/></a>
+      <lo-button v-if="button" :type="['basic', 'primary']" size='tiny' :title="button" :onPress="onButtonClick"></lo-button>
+    </div>
   </li>
 </template>
 
@@ -22,11 +24,9 @@
       },
       title: {
         type: String,
-        default: '',
       },
       subTitle: {
         type: String,
-        default: '',
       },
       avatar: {
         type: String,
@@ -34,12 +34,34 @@
       icon: {
         type: String,
       },
+      iconClick: {
+        type: Function,
+      },
       button: {
         type: String,
+      },
+      buttonClick: {
+        type: Function,
       },
     },
     mounted() {
       attachFastClick.attach(this.$el);
+    },
+    methods: {
+      onIconClick() {
+        if (this.iconClick) {
+          this.iconClick();
+        } else {
+          console.warn('[loops-ui] \'iconClick\' is not defined');
+        }
+      },
+      onButtonClick() {
+        if (this.buttonClick) {
+          this.buttonClick();
+        } else {
+          console.warn('[loops-ui] \'buttonClick\' is not defined');
+        }
+      },
     },
   };
 </script>
@@ -48,17 +70,7 @@
   @import '../src/consts';
 
   .list-item-single-line {
-    @include disableUserEvents;
-    border-top: .5px solid $dl1;
-    padding: 0 15px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    &:active {
-      background-color: $cl1;
-    }
+    @include list-item;
 
     .item-avatar {
       margin-right: 15px;
@@ -68,11 +80,24 @@
       @include h_3;
     }
 
+    .item-icon {
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
     .item-sub-title {
       @include body_2;
     }
 
-    .left {
+    .left, .right {
       display: flex;
       align-items: center;
     }
