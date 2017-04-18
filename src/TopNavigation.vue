@@ -7,8 +7,6 @@
 </template>
 
 <script>
-  import attachFastClick from 'fastclick';
-
   function getActiveIndex(array) {
     let activeItem;
     array.forEach((item) => {
@@ -38,9 +36,6 @@
         if (!this.links || this.links.length === 0) return 0;
         return `${parseFloat(100 / this.links.length).toFixed(2)}%`;
       },
-    },
-    mounted() {
-      attachFastClick.attach(this.$el);
     },
     methods: {
       _onPress(link, index) {

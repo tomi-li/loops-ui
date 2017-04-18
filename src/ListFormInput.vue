@@ -1,7 +1,7 @@
 <template>
   <li class="lo-list-form-input">
-    <input class="input" type="text" :placeholder="placeholder" @focus="checkDirty" @input="checkDirty"/>
-    <span v-if="dirty" @click="clear" class="clear-icon">X</span>
+    <input class="lo-input" type="text" :placeholder="placeholder" @focus="checkDirty" @input="checkDirty"/>
+    <span v-show="dirty" @click="clear" class="clear-icon"><img :src="require('./assets/cross.svg')"></span>
   </li>
 </template>
 
@@ -24,7 +24,7 @@
     },
     methods: {
       clear() {
-        const elm = this.$el.querySelector('.input');
+        const elm = this.$el.querySelector('.lo-input');
         elm.value = '';
         this.dirty = false;
 
@@ -51,8 +51,9 @@
     justify-content: space-between;
     border-bottom: .5px solid $dl1;
     padding: 0 15px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-    .input {
+    .lo-input {
       width: 100%;
       color: $t1;
       border: none;
@@ -69,15 +70,28 @@
     }
 
     .clear-icon {
-      display: inline-block;
+      display: flex;
       width: 16px;
       height: 16px;
       font-family: monospace;
       background-color: $bg1;
       border-radius: 100%;
-      text-align: center;
-      line-height: 16px;
       font-size: 10px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 60%;
+      }
     }
+
+    .clear-icon-enter-active, .clear-icon-leave-active {
+      transition: opacity .2s;
+    }
+    .clear-icon-enter, .clear-icon-leave-to {
+      opacity: 0;
+    }
+
   }
 </style>

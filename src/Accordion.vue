@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="lo-accordion">
     <slot></slot>
   </ul>
 </template>
@@ -26,3 +26,13 @@
     },
   };
 </script>
+
+<style>
+  .lo-accordion {
+    width: 100%;
+  }
+
+  .lo-card .lo-accordion li:last-child .lo-accordion-item-header {
+    border-radius: 0 0 5px 5px;
+  }
+</style>

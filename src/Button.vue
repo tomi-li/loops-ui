@@ -7,8 +7,6 @@
 </template>
 
 <script>
-  import attachFastClick from 'fastclick';
-
   export default{
     name: 'lo-button',
     props: {
@@ -35,9 +33,6 @@
       _onPress() {
         if (this.onPress) this.onPress();
       },
-    },
-    mounted() {
-      attachFastClick.attach(this.$el);
     },
   };
 </script>

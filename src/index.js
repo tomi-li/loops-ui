@@ -2,6 +2,7 @@
  * All Codes below are Lifetime Warranted by Tomi since 22/03/2017.
  */
 import 'normalize.css/normalize.css';
+import attachFastClick from 'fastclick';
 
 import Button from './Button.vue';
 import Card from './Card.vue';
@@ -51,6 +52,7 @@ const install = (Vue) => {
 
   componentsArray.map(component => Vue.component(component.name, component));
   Vue.filter('shortenNumber', filters.shortenNumber);
+  document.addEventListener('DOMContentLoaded', () => attachFastClick.attach(document.body), false);
 };
 
 export default install;

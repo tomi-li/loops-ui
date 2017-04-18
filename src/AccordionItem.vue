@@ -69,18 +69,21 @@
   };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "consts";
 
   .lo-accordion-item-header {
-    height: 20px;
-    padding: 10px;
-    background-color: $bg1;
+    @include list-item;
+
+    height: 40px;
+    padding: 0 10px;
+    background-color: $white;
     border-top: 1px solid $dl1;
     cursor: pointer;
     color: $t2;
     font-weight: bold;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     @media (min-device-pixel-ratio: 2) {

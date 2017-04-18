@@ -13,8 +13,6 @@
 </template>
 
 <script>
-  import attachFastClick from 'fastclick';
-
   export default {
     name: 'lo-list-item-single-line',
     props: {
@@ -43,9 +41,6 @@
       buttonClick: {
         type: Function,
       },
-    },
-    mounted() {
-      attachFastClick.attach(this.$el);
     },
     methods: {
       onIconClick() {

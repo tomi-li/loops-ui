@@ -99,7 +99,7 @@ $btn_4: 13px;
   display: flex;
   flex-direction: column;
 
-  div, section, input, li {
+  * {
     box-sizing: border-box;
   }
 
@@ -108,6 +108,11 @@ $btn_4: 13px;
     padding: 6px 10px;
     border-left: 5px solid $m1;
     font-size: 16px;
+  }
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
   }
 }
 

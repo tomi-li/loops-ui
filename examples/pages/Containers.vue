@@ -48,7 +48,27 @@
       <div class="pages">
         <div class="page-demo">
           <lo-page>
-            <span> Page Contents </span>
+            <lo-card header="Test">
+              <lo-accordion :oneAtOnce="true">
+                <lo-accordion-item title="xxx">
+                  <lo-list>
+                    <lo-list-item-single-line title="Single 1"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 2"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 3"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 4"></lo-list-item-single-line>
+                  </lo-list>
+                </lo-accordion-item>
+                <lo-accordion-item title="yyy">123123</lo-accordion-item>
+                <lo-accordion-item title="zzz">
+                  <lo-list>
+                    <lo-list-item-single-line title="Single 1"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 2"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 3"></lo-list-item-single-line>
+                    <lo-list-item-single-line title="Single 4"></lo-list-item-single-line>
+                  </lo-list>
+                </lo-accordion-item>
+              </lo-accordion>
+            </lo-card>
           </lo-page>
         </div>
         <div class="page-demo">
