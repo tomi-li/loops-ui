@@ -46,7 +46,6 @@ const componentsArray = [
   ListItemSingleLine,
   ListItemTwoLine,
   ListFormInput,
-  VERSION,
 ];
 
 

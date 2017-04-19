@@ -1,6 +1,7 @@
 <template>
   <div class="frame" v-lo-affix="100">
-    <iframe class="iframe" :src="emulatorUrl" frameborder="0"></iframe>
+    {{realUrl}}
+    <iframe class="iframe" :src="realUrl" frameborder="0"></iframe>
   </div>
 </template>
 
@@ -10,9 +11,12 @@
   export default {
     name: 'emulator',
     computed: {
-      ...mapState({
-        emulatorUrl: 'emulatorUrl',
-      }),
+      realUrl() {
+        const regex = /(.*)#\/.*/;
+        const projectUrl = window.location.href.replace(regex, '$1');
+        return `${projectUrl}/#${this.emulatorUrl}`;
+      },
+      ...mapState(['emulatorUrl']),
     },
   };
 </script>

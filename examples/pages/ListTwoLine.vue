@@ -179,7 +179,7 @@
       },
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list-double-line');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/list-double-line');
     },
   };
 </script>

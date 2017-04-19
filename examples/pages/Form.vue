@@ -41,7 +41,7 @@
       },
     },
     created() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/form');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/form');
     },
   };
 </script>

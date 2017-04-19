@@ -153,7 +153,7 @@
       },
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/button');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/button');
     },
   };
 </script>

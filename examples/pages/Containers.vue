@@ -90,7 +90,7 @@
       },
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/accordion');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/accordion');
     },
   };
 </script>

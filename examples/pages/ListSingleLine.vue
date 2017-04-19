@@ -110,7 +110,7 @@
       },
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list-single-line');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/list-single-line');
     },
   };
 </script>

@@ -103,7 +103,7 @@
       },
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list-dense-line');
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/list-dense-line');
     },
   };
 </script>

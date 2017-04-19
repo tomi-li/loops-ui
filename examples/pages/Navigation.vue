@@ -30,7 +30,7 @@
       };
     },
     mounted() {
-      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/top-navigation')
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/top-navigation');
     },
   };
 </script>
