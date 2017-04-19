@@ -6,7 +6,7 @@
       <section>
         <h2>list_13</h2>
 
-        <lo-list class="list" :size="13">
+        <lo-list class="demo-list" :size="13">
           <lo-list-item-dense-line
             text="
             Dense three-line listDense
@@ -37,7 +37,7 @@
       <section>
         <h2>list_14</h2>
 
-        <lo-list class="list" :size="14">
+        <lo-list class="demo-list" :size="14">
           <lo-list-item-dense-line
             text="
             Dense three-line listDense
@@ -72,7 +72,7 @@
       <section>
         <h2>list_15</h2>
 
-        <lo-list class="list" :size="15">
+        <lo-list class="demo-list" :size="15">
           <lo-list-item-dense-line
             subheading1="Subheading 1"
             subheading2="Subheading 2"
@@ -96,5 +96,14 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    methods: {
+      iconClick() {
+        console.log('iconClick');
+      },
+    },
+    mounted() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list-dense-line');
+    },
+  };
 </script>

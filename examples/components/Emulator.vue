@@ -16,7 +16,9 @@
     },
   };
 </script>
-<style>
+<style lang="scss">
+  @import "../../src/consts";
+
   .frame {
     position: relative;
     margin-top: 100px;
@@ -29,8 +31,8 @@
     position: absolute;
     width: 375px;
     height: 654px;
-    background-color: #3bd80d;
     top: 123px;
     left: 29.5px;
+    background-color: $bg1;
   }
 </style>

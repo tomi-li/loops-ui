@@ -6,7 +6,7 @@
       <section>
         <h2>input_1</h2>
 
-        <lo-list class="list">
+        <lo-list class="demo-list">
           <lo-list-form-input
             placeholder="input here"
             :onValue="onValue1"></lo-list-form-input>
@@ -39,6 +39,9 @@
       onValue2(value) {
         this.value2 = value;
       },
+    },
+    created() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/form');
     },
   };
 </script>

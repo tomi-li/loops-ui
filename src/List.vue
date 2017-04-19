@@ -20,6 +20,8 @@
   @import "consts";
 
   .lo-list {
+    background-color: $white;
+
     // size
     &.size-1, &.size-2, &.size-3 {
       li {

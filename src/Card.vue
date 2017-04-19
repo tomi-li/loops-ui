@@ -43,22 +43,18 @@
     border: 1px solid $dl1;
     background-color: $ic2;
 
-    @media (-webkit-min-device-pixel-ratio: 2) {
-      border: .5px solid $dl1;
+    .lo-card-header {
+      @include flex;
+      width: 100%; // flex align-items will cause width collapse.
+      height: 45px;
+      background-color: $bg1;
+      border-radius: 5px 5px 0 0;
+      font-size: 17px;
+      font-weight: bold;
+      user-select: none;
+      cursor: default;
+      color: #b0b0bb;
     }
-  }
-
-  .lo-card .lo-card-header {
-    @include flex;
-    width: 100%; // flex align-items will cause width collapse.
-    height: 45px;
-    background-color: $bg1;
-    border-radius: 5px 5px 0 0;
-    font-size: 17px;
-    font-weight: bold;
-    user-select: none;
-    cursor: default;
-    color: #b0b0bb;
   }
 
   .lo-card.active .lo-card-header {
@@ -69,6 +65,19 @@
     @include flex;
     flex: 1;
     width: 100%;
+  }
+
+  .inapp {
+    .lo-card {
+      margin: 10px * $ratio;
+      border-radius: 5px * $ratio;
+    }
+
+    .lo-card .lo-card-header {
+      height: 45px * $ratio;
+      border-radius: 5px * $ratio 5px * $ratio 0 0;
+      font-size: 16px * $ratio;
+    }
   }
 
 </style>

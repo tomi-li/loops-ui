@@ -16,8 +16,14 @@ import Form from '../pages/Form.vue';
 
 // mobiles
 import MobileIndex from '../pages/mobile/Index.vue';
-import MobileList from '../pages/mobile/List.vue';
+import MobileListSingleLine from '../pages/mobile/ListSingleLine.vue';
+import MobileListDoubleLine from '../pages/mobile/ListDoubleLine.vue';
+import MobileListDenseLine from '../pages/mobile/ListDenseLine.vue';
 import MobileButton from '../pages/mobile/Button.vue';
+import MobileForm from '../pages/mobile/Form.vue';
+import MobileTopNavigation from '../pages/mobile/Navigation.vue';
+import MobileAccordion from '../pages/mobile/Accordion.vue';
+import MobileSpinner from '../pages/mobile/Spinner.vue';
 
 Vue.use(Router);
 
@@ -100,16 +106,50 @@ export default new Router({
       component: MobileIndex,
       children: [
         {
-          path: 'list',
-          name: 'MobileList',
-          component: MobileList,
+          path: 'list-single-line',
+          name: 'MobileListSingleLine',
+          component: MobileListSingleLine,
+        },
+        {
+          path: 'list-double-line',
+          name: 'MobileListDoubleLine',
+          component: MobileListDoubleLine,
+        },
+        {
+          path: 'list-dense-line',
+          name: 'MobileListDenseLine',
+          component: MobileListDenseLine,
         },
         {
           path: 'button',
           name: 'MobileButton',
           component: MobileButton,
         },
+        {
+          path: 'form',
+          name: 'MobileForm',
+          component: MobileForm,
+        },
+        {
+          path: 'top-navigation',
+          name: 'MobileTopNavigation',
+          component: MobileTopNavigation,
+        },
+        {
+          path: 'accordion',
+          name: 'MobileAccordion',
+          component: MobileAccordion,
+        },
+        {
+          path: 'spinner',
+          name: 'MobileSpinner',
+          component: MobileSpinner,
+        },
       ],
+    },
+    {
+      path: '/mobile/*',
+      redirect: '/mobile/button',
     },
     {
       path: '*',

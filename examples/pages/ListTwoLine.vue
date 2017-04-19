@@ -6,7 +6,7 @@
       <section>
         <h2>list_6</h2>
 
-        <lo-list class="list" :size="6">
+        <lo-list class="demo-list" :size="6">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"></lo-list-item-two-line>
@@ -25,7 +25,7 @@
       <section>
         <h2>list_7</h2>
 
-        <lo-list class="list" :size="7">
+        <lo-list class="demo-list" :size="7">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"
@@ -48,7 +48,7 @@
       <section>
         <h2>list_8</h2>
 
-        <lo-list class="list" :size="8">
+        <lo-list class="demo-list" :size="8">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"
@@ -71,7 +71,7 @@
       <section>
         <h2>list_9</h2>
 
-        <lo-list class="list" :size="9">
+        <lo-list class="demo-list" :size="9">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"
@@ -98,7 +98,7 @@
       <section>
         <h2>list_10</h2>
 
-        <lo-list class="list" :size="10">
+        <lo-list class="demo-list" :size="10">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"
@@ -125,7 +125,7 @@
       <section>
         <h2>list_11</h2>
 
-        <lo-list class="list" :size="11">
+        <lo-list class="demo-list" :size="11">
           <lo-list-item-two-line
             subTitle="Subheading"
             list="Two-line list"></lo-list-item-two-line>
@@ -144,7 +144,7 @@
       <section>
         <h2>list_12</h2>
 
-        <lo-list class="list" :size="12">
+        <lo-list class="demo-list" :size="12">
           <lo-list-item-two-line
             title="Two-line list specs"
             subTitle="Subheading"
@@ -172,9 +172,14 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    methods: {
+      iconClick() {
+        console.log('iconClick');
+      },
+    },
+    mounted() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list-double-line');
+    },
+  };
 </script>
-
-<style>
-
-</style>

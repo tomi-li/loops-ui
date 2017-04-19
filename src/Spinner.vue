@@ -25,6 +25,8 @@
 <style lang="scss" scoped>
   @import "consts";
 
+  $spinner-size: 14px;
+
   .sk-spinner {
     div {
       background-color: $m1;
@@ -36,8 +38,8 @@
   }
 
   .sk-spinner-three-bounce div {
-    width: 14px;
-    height: 14px;
+    width: $spinner-size;
+    height: $spinner-size;
 
     border-radius: 100%;
     display: inline-block;
@@ -81,6 +83,13 @@
     40% {
       -webkit-transform: scale(1);
       transform: scale(1);
+    }
+  }
+
+  .inapp {
+    .sk-spinner-three-bounce div {
+      width: $spinner-size * 2;
+      height: $spinner-size * 2;
     }
   }
 </style>

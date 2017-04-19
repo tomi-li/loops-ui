@@ -27,12 +27,20 @@
   };
 </script>
 
-<style>
+<style lang="scss">
+  @import './consts';
+
   .lo-accordion {
     width: 100%;
   }
 
   .lo-card .lo-accordion li:last-child .lo-accordion-item-header {
     border-radius: 0 0 5px 5px;
+  }
+
+  .inapp {
+    .lo-card .lo-accordion li:last-child .lo-accordion-item-header {
+      border-radius: 0 0 5px * $ratio 5px * $ratio;
+    }
   }
 </style>

@@ -29,9 +29,8 @@
         ],
       };
     },
+    mounted() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/top-navigation')
+    },
   };
 </script>
-
-<style>
-
-</style>

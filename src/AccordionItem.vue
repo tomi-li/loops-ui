@@ -72,16 +72,19 @@
 <style lang="scss">
   @import "consts";
 
+  $arrow-size: 16px;
+
   .lo-accordion-item-header {
     @include list-item;
+    @include h_3;
 
-    height: 40px;
+    height: 48px;
     padding: 0 10px;
     background-color: $white;
     border-top: 1px solid $dl1;
     cursor: pointer;
     color: $t2;
-    font-weight: bold;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,8 +94,8 @@
     }
 
     .arrow {
-      width: 20px;
-      height: 20px;
+      width: $arrow-size;
+      height: $arrow-size;
       background: center center no-repeat url('assets/arrow.svg');
       background-size: contain;
 
@@ -109,4 +112,18 @@
     transition: max-height .5s, opacity .4s;
   }
 
+  .inapp {
+    .lo-accordion-item-header {
+      @include list-item($ratio);
+      @include h_3($ratio);
+      height: 48px * $ratio;
+      padding: 0 10px * $ratio;
+      color: $t2;
+    }
+
+    .arrow {
+      width: $arrow-size * $ratio;
+      height: $arrow-size * $ratio;
+    }
+  }
 </style>

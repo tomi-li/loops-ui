@@ -53,6 +53,7 @@
       }
 
       .item-text {
+        @include body_2;
         margin: 0;
       }
 
@@ -67,6 +68,32 @@
       }
       .item-list {
         @include h_4;
+      }
+    }
+  }
+
+  .inapp {
+    .lo-list-item-dense-line {
+      @include list-item($ratio);
+
+      .left {
+        .item-avatar {
+          margin-right: 15px * $ratio;
+        }
+
+        .item-text {
+          @include body_2($ratio);
+        }
+
+        .item-subheading1 {
+          @include body_2($ratio);
+        }
+        .item-subheading2 {
+          @include body_2($ratio);
+        }
+        .item-list {
+          @include h_4($ratio);
+        }
       }
     }
   }

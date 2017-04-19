@@ -64,6 +64,8 @@
 <style lang="scss">
   @import '../src/consts';
 
+  $item-icon-size: 22px;
+
   .list-item-single-line {
     @include list-item;
 
@@ -76,8 +78,8 @@
     }
 
     .item-icon {
-      width: 22px;
-      height: 22px;
+      width: $item-icon-size;
+      height: $item-icon-size;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -110,6 +112,11 @@
       }
       .item-sub-title {
         @include body_2($ratio);
+      }
+
+      .item-icon {
+        width: $item-icon-size * 2;
+        height: $item-icon-size * 2;
       }
     }
   }

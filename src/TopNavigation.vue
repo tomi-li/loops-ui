@@ -61,6 +61,7 @@
       flex: 1;
       color: $m1;
       box-sizing: border-box;
+      transition: backgroundColor .1s, color .05s;
 
       &.active {
         background-color: $m1;
@@ -68,10 +69,31 @@
       }
 
       .lo-top-navigation-link {
+        @include disableUserEvents;
         @include flex;
         height: 32px;
         cursor: pointer;
         padding: 0 16px;
+        transition: backgroundColor .1s;
+
+        &:active, &.active {
+          background-color: rgba($m1, .4);
+        }
+      }
+    }
+  }
+
+  .inapp {
+    .lo-top-navigation {
+      border-radius: 4px * $ratio;
+
+      li {
+        font-size: 14px * $ratio;
+
+        .lo-top-navigation-link {
+          height: 32px * $ratio;
+          padding: 0 16px * $ratio;
+        }
       }
     }
   }

@@ -86,8 +86,11 @@
   export default {
     methods: {
       sectionTitleClicked() {
-        console.log(this);
+        console.log('title clicked');
       },
+    },
+    mounted() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/accordion');
     },
   };
 </script>

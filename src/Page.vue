@@ -42,8 +42,6 @@
   .lo-page {
     position: relative;
     min-height: 100%;
-    min-width: 100%;
-    background-color: $bg1;
     overflow: auto; // prevent margin collapse
 
     .lo-backdrop {

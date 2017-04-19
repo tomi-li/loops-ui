@@ -66,6 +66,8 @@
 <style lang="scss" scoped>
   @import "../src/consts";
 
+  $icon-font-size: 22px;
+
   .lo-list-item-two-line {
     @include list-item;
 
@@ -92,8 +94,8 @@
 
       .item-left-icon {
         margin-right: 15px;
-        width: 22px;
-        height: 22px;
+        width: $icon-font-size;
+        height: $icon-font-size;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -107,8 +109,8 @@
 
     .right {
       .item-icon {
-        width: 22px;
-        height: 22px;
+        width: $icon-font-size;
+        height: $icon-font-size;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -120,5 +122,37 @@
       }
     }
 
+  }
+
+  .inapp {
+    .lo-list-item-two-line {
+      @include list-item(2);
+
+      .left {
+        .avatar {
+          margin-right: 30px;
+        }
+        .item-title, .item-list {
+          @include h_3(2);
+        }
+
+        .item-sub-title {
+          @include body_2(2);
+        }
+
+        .item-left-icon {
+          margin-right: 30px;
+          width: $icon-font-size * 2;
+          height: $icon-font-size * 2;
+        }
+      }
+
+      .right {
+        .item-icon {
+          width: $icon-font-size * 2;
+          height: $icon-font-size * 2;
+        }
+      }
+    }
   }
 </style>

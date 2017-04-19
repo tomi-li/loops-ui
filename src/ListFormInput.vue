@@ -26,7 +26,9 @@
       clear() {
         const elm = this.$el.querySelector('.lo-input');
         elm.value = '';
+        elm.focus(); // focus to make mobile safari show placeholder.
         this.dirty = false;
+        elm.blur();
 
         if (this.onValue) this.onValue('');
       },
@@ -44,6 +46,8 @@
 <style lang="scss" scoped>
   @import "consts";
 
+  $clear-icon-size: 20px;
+
   .lo-list-form-input {
     height: 48px;
     display: flex;
@@ -54,35 +58,31 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     .lo-input {
+      @include body_2;
       width: 100%;
       color: $t1;
       border: none;
       outline: none;
       -webkit-appearance: none;
-      height: 100%;
 
-      ::-webkit-input-placeholder,
-      ::-moz-placeholder,
-      :-ms-input-placeholder {
-        @include body_2;
+      ::-webkit-input-placeholder {
         color: $t4;
       }
     }
 
     .clear-icon {
       display: flex;
-      width: 16px;
-      height: 16px;
+      width: $clear-icon-size;
+      height: $clear-icon-size;
       font-family: monospace;
       background-color: $bg1;
       border-radius: 100%;
-      font-size: 10px;
       cursor: pointer;
       align-items: center;
       justify-content: center;
 
       img {
-        max-width: 60%;
+        max-width: 50%;
       }
     }
 
@@ -91,6 +91,21 @@
     }
     .clear-icon-enter, .clear-icon-leave-to {
       opacity: 0;
+    }
+
+  }
+
+  .inapp {
+    .lo-list-form-input {
+      padding: 0 30px;
+
+      .lo-input {
+        @include body_2(2);
+      }
+      .clear-icon {
+        width: $clear-icon-size * 2;
+        height: $clear-icon-size * 2;
+      }
     }
 
   }

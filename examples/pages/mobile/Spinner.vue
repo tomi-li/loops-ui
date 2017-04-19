@@ -1,13 +1,9 @@
 <template>
-  <lo-page>
-    <lo-button title="Test"></lo-button>
+  <lo-page :loading="true">
+      asdasdasd
   </lo-page>
 </template>
 
 <script>
   export default {};
 </script>
-
-<style>
-
-</style>
