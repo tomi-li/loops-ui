@@ -1,6 +1,5 @@
 <template>
   <div class="frame" v-lo-affix="100">
-    {{realUrl}}
     <iframe class="iframe" :src="realUrl" frameborder="0"></iframe>
   </div>
 </template>
