@@ -9,7 +9,8 @@
     "lint": "eslint --ext .js,.vue src",
     "release": "npm version patch && npm publish",
     "dashboard": "webpack-dashboard -- webpack-dev-server --watch --progress --config webpack.example.js --open --hot --host 0.0.0.0",
-    "analyze": "rimraf dist && webpack --json | webpack-bundle-size-analyzer"
+    "analyze": "rimraf dist && webpack --json | webpack-bundle-size-analyzer",
+    "build example": "rimraf docs && webpack --progress --config webpack.example.js"
   },
   "keywords": [
     "Vue",

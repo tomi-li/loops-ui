@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 config.entry = './examples/main.js';
 config.output = {
-  path: path.resolve(__dirname, './dist'),
+  path: path.resolve(__dirname, './docs'),
   publicPath: '',
   filename: '[name]_[hash].js',
 };
