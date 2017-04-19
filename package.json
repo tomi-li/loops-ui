@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomi-li/vue-loops.git"
+    "url": "git+https://github.com/tomi-li/loops-ui.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomi-li/vue-loops/issues"
+    "url": "https://github.com/tomi-li/loops-ui/issues"
   },
-  "homepage": "https://github.com/tomi-li/vue-loops",
+  "homepage": "https://tomi-li.github.io/loops-ui",
   "devDependencies": {
     "animejs": "^2.0.2",
     "autoprefixer": "^6.7.2",

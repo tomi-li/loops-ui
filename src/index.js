@@ -23,6 +23,9 @@ import ListItemDenseLine from './ListItemDenseLine.vue';
 import ListItemSingleLine from './ListItemSingleLine.vue';
 import ListItemTwoLine from './ListItemTwoLine.vue';
 import ListFormInput from './ListFormInput.vue';
+import PackageFile from '../package.json';
+
+const VERSION = PackageFile.version;
 
 const componentsArray = [
   Button,
@@ -43,6 +46,7 @@ const componentsArray = [
   ListItemSingleLine,
   ListItemTwoLine,
   ListFormInput,
+  VERSION,
 ];
 
 
@@ -52,7 +56,18 @@ const install = (Vue) => {
 
   componentsArray.map(component => Vue.component(component.name, component));
   Vue.filter('shortenNumber', filters.shortenNumber);
+
+  // add fastclick to body
   document.addEventListener('DOMContentLoaded', () => attachFastClick.attach(document.body), false);
+
+  // add inapp class to body
+  document.head.querySelectorAll('meta').forEach((each) => {
+    if (each.name === 'viewport') {
+      if (window.innerWidth === 750 && /width=750/.test(each.content)) {
+        document.body.className += 'inapp';
+      }
+    }
+  });
 };
 
 export default install;
@@ -76,12 +91,6 @@ export const components = {
   ListItemSingleLine,
   ListItemTwoLine,
   ListFormInput,
+  VERSION,
 };
 
-document.head.querySelectorAll('meta').forEach(each => {
-  if (each.name === 'viewport') {
-    if (window.innerWidth === 750 && /width=750/.test(each.content)) {
-      document.body.className += 'inapp';
-    }
-  }
-});
