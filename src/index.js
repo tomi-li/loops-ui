@@ -77,3 +77,11 @@ export const components = {
   ListItemTwoLine,
   ListFormInput,
 };
+
+document.head.querySelectorAll('meta').forEach(each => {
+  if (each.name === 'viewport') {
+    if (window.innerWidth === 750 && /width=750/.test(each.content)) {
+      document.body.className += 'inapp';
+    }
+  }
+});

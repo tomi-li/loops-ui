@@ -2,6 +2,8 @@
   Colors
  */
 
+$ratio: 2;
+
 // Main Color
 $m1: #ec2c7a;
 
@@ -42,45 +44,45 @@ $blue: #1488fe;
  */
 
 // Title
-@mixin h_1() {
-  @include font(20px, bold, $t1);
+@mixin h_1($ratio: 1) {
+  @include font(20px * $ratio, bold, $t1);
 }
 
-@mixin h_2() {
-  @include font(17px, bold, $t1);
+@mixin h_2($ratio: 1) {
+  @include font(17px * $ratio, bold, $t1);
 }
 
-@mixin h_3() {
-  @include font(16px, bold, $t1);
+@mixin h_3($ratio: 1) {
+  @include font(16px * $ratio, bold, $t1);
 }
 
-@mixin h_4() {
-  @include font(14px, bold, $t1);
+@mixin h_4($ratio: 1) {
+  @include font(14px * $ratio, bold, $t1);
 }
 
-@mixin h_5() {
-  @include font(12px, bold, $t1);
+@mixin h_5($ratio: 1) {
+  @include font(12px * $ratio, bold, $t1);
 }
 
-@mixin h_6() {
-  @include font(9px, bold, $t2);
+@mixin h_6($ratio: 1) {
+  @include font(9px * $ratio, bold, $t2);
 }
 
 // Content
-@mixin body_1() {
-  @include font(16px, regular, $t2)
+@mixin body_1($ratio: 1) {
+  @include font(16px * $ratio, regular, $t2)
 }
 
-@mixin body_2() {
-  @include font(14px, regular, $t2)
+@mixin body_2($ratio: 1) {
+  @include font(14px * $ratio, regular, $t2)
 }
 
-@mixin body_3() {
-  @include font(12px, regular, $t2)
+@mixin body_3($ratio: 1) {
+  @include font(12px * $ratio, regular, $t2)
 }
 
-@mixin body_4() {
-  @include font(10px, regular, $t2)
+@mixin body_4($ratio: 1) {
+  @include font(10px * $ratio, regular, $t2)
 }
 
 // Button

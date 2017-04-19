@@ -103,13 +103,20 @@
 </template>
 
 <script>
+  import { mapActions } from 'vuex';
+
   export default {
     methods: {
       iconClick() {
         console.log('iconClick');
       },
     },
-  };
+    mounted() {
+      console.log(this.$store.dispatch('changeEmulatorUrl', '/#/mobile/list'));
+//      console.log(mapActions(['changeEmulatorUrl']));
+    },
+  }
+  ;
 </script>
 
 <style lang="scss">

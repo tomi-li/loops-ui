@@ -1,19 +1,20 @@
 import Vue from 'vue';
-import App from './App.vue';
+import store from './store';
 import router from './router';
+import RegisterDirectives from './directives';
 import VueLoops from '../src';
 import { componentsArray } from './components';
-
-console.clear();
 
 Vue.use(VueLoops);
 Vue.config.productionTip = false;
 
 componentsArray.forEach(component => Vue.component(component.name, component));
+RegisterDirectives(Vue);
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  render: h => h(App),
+  store,
+  render: h => h('router-view'),
 });

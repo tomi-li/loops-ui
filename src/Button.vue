@@ -140,6 +140,31 @@
 
   .lo-button-text {
     font-weight: bold;
+  }
 
+  .inapp {
+    .lo-button {
+      // sizes
+      &.regular {
+        height: 42px * $ratio;
+        width: 240px * $ratio;
+        border-radius: 21px * $ratio;
+        font-size: $btn_3 * $ratio;
+      }
+
+      &.small {
+        height: 32px * $ratio;
+        width: 180px * $ratio;
+        border-radius: 16px * $ratio;
+        font-size: $btn_4 * $ratio;
+      }
+
+      &.tiny {
+        width: 92px * $ratio;
+        height: 28px * $ratio;
+        border-radius: 14px * $ratio;
+        font-size: $btn_4 * $ratio;
+      }
+    }
   }
 </style>

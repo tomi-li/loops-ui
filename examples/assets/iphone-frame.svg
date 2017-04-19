@@ -1,0 +1,24 @@
+<svg width="424px" height="892px" viewBox="0 0 424 892" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <rect id="path-1" x="115" y="11" width="419" height="889" rx="67"></rect>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-110.000000, -8.000000)">
+      <g id="Rectangle">
+        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        <rect stroke="#E5E5E5" stroke-width="3" x="116.5" y="12.5" width="416" height="886" rx="67"></rect>
+      </g>
+      <ellipse id="Oval" fill="#D8D8D8" cx="323.5" cy="66.5" rx="7.5" ry="7.5"></ellipse>
+      <circle id="Oval-2" fill="#D8D8D8" cx="263" cy="94" r="5"></circle>
+      <rect id="Rectangle-5" stroke="#D8D8D8" stroke-width="2" x="140" y="130" width="374" height="655"></rect>
+      <circle id="Oval-3" stroke="#979797" stroke-width="6" cx="327" cy="841" r="33"></circle>
+      <rect id="Rectangle-4" fill="#D8D8D8" x="288" y="89" width="74" height="10" rx="5"></rect>
+      <rect id="Rectangle-2" fill="#E5E5E5" x="414" y="8" width="60" height="5" rx="1"></rect>
+      <rect id="Rectangle-3" fill="#E5E5E5" x="111" y="144" width="5" height="43" rx="2"></rect>
+      <rect id="Rectangle-3-Copy" fill="#E5E5E5" x="111" y="231" width="5" height="33" rx="2"></rect>
+      <rect id="Rectangle-3-Copy-2" fill="#E5E5E5" x="110" y="288" width="5" height="33" rx="2"></rect>
+    </g>
+  </g>
+</svg>

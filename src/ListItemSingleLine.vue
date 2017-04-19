@@ -97,4 +97,20 @@
       align-items: center;
     }
   }
+
+  .inapp {
+    .list-item-single-line {
+      padding: 0 15px * $ratio;
+
+      .item-avatar {
+        margin-right: 15px * $ratio;
+      }
+      .item-title {
+        @include h_3($ratio);
+      }
+      .item-sub-title {
+        @include body_2($ratio);
+      }
+    }
+  }
 </style>

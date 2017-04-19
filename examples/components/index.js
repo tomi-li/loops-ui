@@ -2,10 +2,12 @@
  * All Codes below are Lifetime Warranted by Tomi since 24/03/2017.
  */
 import CodeBlock from './CodeBlock.vue';
+import Emulator from './Emulator.vue';
 import DemoSection from './DemoSection.vue';
 
 const componentsObject = {
   CodeBlock,
+  Emulator,
   DemoSection,
 };
 

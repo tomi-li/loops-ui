@@ -152,6 +152,9 @@
         console.log('clicked');
       },
     },
+    mounted() {
+      this.$store.dispatch('changeEmulatorUrl', '/#/mobile/button');
+    },
   };
 </script>
 
