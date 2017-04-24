@@ -13,7 +13,7 @@
             <span>A UI component for Loops APP</span>
             <br>
             <small>
-              <lo-button type="link" href="mailto:lishuo@mozat.com" title="lishuo@mozat.com"></lo-button>
+              <lo-button type="link" href="mailto:lishuo.tomi@gmail.com" title="lishuo.tomi@gmail.com"></lo-button>
             </small>
           </blockquote>
         </li>

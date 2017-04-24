@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const config = require('./webpack.base.config');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,9 +10,16 @@ config.output = {
   filename: '[name]_[hash].js',
 };
 
-config.devtool = 'eval';
+config.devtool = 'nosources-source-map';
 
 config.plugins = [
+  new webpack.optimize.UglifyJsPlugin({
+    sourceMap: true,
+    compress: {
+      warnings: false,
+    },
+    comments: false,
+  }),
   new HtmlWebpackPlugin({
     filename: './index.html',
     template: './index.html',
