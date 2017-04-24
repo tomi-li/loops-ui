@@ -24,19 +24,19 @@
       },
       ...mapState(['emulatorUrl']),
     },
-    mounted() {
-      this.qrcode = new QRCode('qrcode', {
-        width: 90,
-        height: 90,
-        colorDark: '#000000',
-        colorLight: '#ffffff',
-        correctLevel: QRCode.CorrectLevel.M,
-      });
-      this.qrcode.makeCode(this.realUrl);
-    },
-    updated() {
-      this.qrcode.makeCode(this.realUrl);
-    },
+//    mounted() {
+//      this.qrcode = new QRCode('qrcode', {
+//        width: 90,
+//        height: 90,
+//        colorDark: '#000000',
+//        colorLight: '#ffffff',
+//        correctLevel: QRCode.CorrectLevel.M,
+//      });
+//      this.qrcode.makeCode(this.realUrl);
+//    },
+//    updated() {
+//      this.qrcode.makeCode(this.realUrl);
+//    },
   };
 </script>
 <style lang="scss">
