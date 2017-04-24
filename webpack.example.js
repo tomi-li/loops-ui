@@ -10,16 +10,9 @@ config.output = {
   filename: '[name]_[hash].js',
 };
 
-config.devtool = 'nosources-source-map';
+config.devtool = 'eval';
 
 config.plugins = [
-  new webpack.optimize.UglifyJsPlugin({
-    sourceMap: true,
-    compress: {
-      warnings: false,
-    },
-    comments: false,
-  }),
   new HtmlWebpackPlugin({
     filename: './index.html',
     template: './index.html',
