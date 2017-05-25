@@ -1,5 +1,5 @@
 <template>
-  <lo-page>
+  <lo-page navigator="test">
     <lo-button title="Test"></lo-button>
   </lo-page>
 </template>

@@ -29,5 +29,9 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    created() {
+      this.$store.dispatch('changeEmulatorUrl', '/mobile/overview');
+    },
+  };
 </script>

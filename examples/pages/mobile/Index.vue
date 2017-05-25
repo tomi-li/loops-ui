@@ -1,6 +1,8 @@
 <template>
   <div class="body">
-    <router-view></router-view>
+    <transition name="router">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -20,5 +22,13 @@
     .body {
       @include body(2);
     }
+  }
+
+  .router-enter-active, .router-leave-active {
+    transition: opacity .5s
+  }
+
+  .router-enter, .router-leave-to {
+    opacity: 0
   }
 </style>

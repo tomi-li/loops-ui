@@ -17,41 +17,8 @@
             </small>
           </blockquote>
         </li>
-        <li>
-          <router-link to="/doc/overview">Overview</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/colors">Color Pallet</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/buttons">Buttons</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/avatar">Avatar</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/list-single-line">List - SingleLine</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/list-two-line">List - TwoLine</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/list-dense-line">List - DenseLine</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/form">Form</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/navigation">Navigation</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/containers">Containers</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/spinners">Spinners</router-link>
-        </li>
-        <li>
-          <router-link to="/doc/swiper">Swipers</router-link>
+        <li v-for="router in docRouter.children">
+          <router-link :to="router.path">{{ router.name }}</router-link>
         </li>
       </ul>
     </div>
@@ -66,8 +33,18 @@
 
 <script>
   import anime from 'animejs';
+  import Router from '../router';
 
   export default {
+    data() {
+      return {
+        docRouter: Router.options.routes.reduce((p, n) => {
+          if (p && p.name === 'Doc') return { ...p };
+          if (n.name === 'Doc') return { ...n };
+          return {};
+        }),
+      };
+    },
     mounted() {
       const basicTimeline = anime.timeline();
 

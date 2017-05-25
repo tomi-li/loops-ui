@@ -40,7 +40,7 @@
   @import "consts";
 
   .lo-page {
-    position: relative;
+    position: absolute;
     min-height: 100%;
     overflow: auto; // prevent margin collapse
 

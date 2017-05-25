@@ -3,7 +3,8 @@ import Router from 'vue-router';
 import Index from '../pages/Index.vue';
 import Overview from '../pages/Overview.vue';
 import Buttons from '../pages/Buttons.vue';
-import Containers from '../pages/Containers.vue';
+import Accordion from '../pages/Accordion.vue';
+import Card from '../pages/Card.vue';
 import Navigation from '../pages/Navigation.vue';
 import Spinner from '../pages/Spinners.vue';
 import Swiper from '../pages/Swipers.vue';
@@ -16,6 +17,7 @@ import Form from '../pages/Form.vue';
 
 // mobiles
 import MobileIndex from '../pages/mobile/Index.vue';
+import MobileOverview from '../pages/mobile/Overview.vue';
 import MobileListSingleLine from '../pages/mobile/ListSingleLine.vue';
 import MobileListDoubleLine from '../pages/mobile/ListDoubleLine.vue';
 import MobileListDenseLine from '../pages/mobile/ListDenseLine.vue';
@@ -54,9 +56,14 @@ export default new Router({
           component: Buttons,
         },
         {
-          path: 'containers',
-          name: 'Containers',
-          component: Containers,
+          path: 'accordion',
+          name: 'Accordion',
+          component: Accordion,
+        },
+        {
+          path: 'card',
+          name: 'Card',
+          component: Card,
         },
         {
           path: 'navigation',
@@ -74,14 +81,14 @@ export default new Router({
           component: Swiper,
         },
         {
-          path: 'list-single-line',
-          name: 'ListSingleLine',
-          component: ListSingleLine,
-        },
-        {
           path: 'avatar',
           name: 'Avatar',
           component: Avatars,
+        },
+        {
+          path: 'list-single-line',
+          name: 'ListSingleLine',
+          component: ListSingleLine,
         },
         {
           path: 'list-two-line',
@@ -105,6 +112,11 @@ export default new Router({
       name: 'Mobile',
       component: MobileIndex,
       children: [
+        {
+          path: 'overview',
+          name: 'MobileOverview',
+          component: MobileOverview,
+        },
         {
           path: 'list-single-line',
           name: 'MobileListSingleLine',
