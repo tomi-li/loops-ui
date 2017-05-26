@@ -60,13 +60,18 @@ const install = (Vue) => {
   document.addEventListener('DOMContentLoaded', () => attachFastClick.attach(document.body), false);
 
   // add inapp class to body
-  document.head.querySelectorAll('meta').forEach((each) => {
-    if (each.name === 'viewport') {
-      if (window.innerWidth === 750 && /width=750/.test(each.content)) {
-        document.body.className += 'inapp';
+  const metas = document.getElementsByTagName('meta');
+  if (metas.length > 0) {
+    // eslint-disable-next-line no-plusplus
+    for (let i = 0; i < metas.length; i++) {
+      const each = metas[i];
+      if (each.name === 'viewport') {
+        if (window.innerWidth === 750 && /width=750/.test(each.content)) {
+          document.body.className += 'inapp';
+        }
       }
     }
-  });
+  }
 };
 
 export default install;
