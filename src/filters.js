@@ -9,10 +9,10 @@ export default {
 
     if (num >= 1000) {
       if (num % 1000 === 0) {
-        return `${parseFloat(num / 1000).toPrecision(0)}K`;
+        return `${parseInt(num / 1000, 10)}K`;
       }
       // in Chrome. to Precision will auto rounding. using string regex instead
-      // return `${parseFloat(num / 1000).toPrecision(1)}K`;
+      // return `${parseFloat(num / 1000).toPrecision(1)}K`;`
       const with1Decimals = (num / 1000).toString().match(/^-?\d+(?:\.\d)?/)[0];
       return parseFloat(with1Decimals);
     }
